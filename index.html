@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Airport - catering</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="shortcut icon"
+      href="img/favicon-16x16.png"
+      type="image/x-icon"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="assets/css/homepage.css" />
+
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+
+    <style type="text/css">
+      .animate-in {
+        -webkit-animation: fadeIn 0.5s ease-in;
+
+        animation: fadeIn 0.5s ease-in;
+      }
+
+      .animate-out {
+        -webkit-transition: opacity 3s;
+
+        transition: opacity 3s;
+
+        opacity: 0;
+      }
+
+      @-webkit-keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="animate-in home-page">
+    <div class="relative home">
+      <section class="page">
+        <span3 class="img3"><img src="img/cloud.png" /></span3>
+
+        <span1 class="img1" id="animateAirplane"
+          ><img src="img/red-rocks-park-o1.png"
+        /></span1>
+
+        <span4 class="img4"><img src="img/clouds-gridlock.png" /></span4>
+
+        <span2 class="img2" id="animateGround">
+          <img src="img/city3.png" class="absolute city3" />
+          <img src="img/city2.png" class="absolute city2" />
+          <img src="img/city1.png" class="absolute city1" />
+        </span2>
+      </section>
+
+      <div class="wrapper">
+        <div class="relative">
+          <div class="avio">
+            <a href="#" onclick="handleAirplaneMove()">
+              <span>
+                <svg
+                  version="1.1"
+                  id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 512 512"
+                  style="enable-background: new 0 0 512 512"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <g>
+                      <path
+                        d="M374.176,110.386l-104-104.504c-0.006-0.006-0.013-0.011-0.019-0.018c-7.818-7.832-20.522-7.807-28.314,0.002
+              c-0.006,0.006-0.013,0.011-0.019,0.018l-104,104.504c-7.791,7.829-7.762,20.493,0.068,28.285
+              c7.829,7.792,20.492,7.762,28.284-0.067L236,68.442V492c0,11.046,8.954,20,20,20c11.046,0,20-8.954,20-20V68.442l69.824,70.162
+              c7.792,7.829,20.455,7.859,28.284,0.067C381.939,130.878,381.966,118.214,374.176,110.386z"
+                      />
+                    </g>
+                  </g>
+
+                  <g></g>
+
+                  <g></g>
+
+                  <g></g>
+
+                  <g></g>
+
+                  <g></g>
+
+                  <g></g>
+
+                  <g></g>
+
+                  <g></g>
+
+                  <g></g>
+
+                  <g></g>
+
+                  <g></g>
+
+                  <g></g>
+
+                  <g></g>
+
+                  <g></g>
+
+                  <g></g></svg
+              ></span>
+              <h3>AVIATION CATERING</h3>
+            </a>
+          </div>
+
+          <div class="box">
+            <img src="img/logosatextom.png" />
+          </div>
+
+          <div class="ground">
+            <a href="#" onclick="handleGroundMove()">
+              <h3>GROUND CATERING</h3>
+              <span>
+                <svg
+                  version="1.1"
+                  id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 512 512"
+                  style="enable-background: new 0 0 512 512"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <g>
+                      <path
+                        d="M374.108,373.328c-7.829-7.792-20.492-7.762-28.284,0.067L276,443.557V20c0-11.046-8.954-20-20-20
+            c-11.046,0-20,8.954-20,20v423.558l-69.824-70.164c-7.792-7.829-20.455-7.859-28.284-0.067c-7.83,7.793-7.859,20.456-0.068,28.285
+            l104,104.504c0.006,0.007,0.013,0.012,0.019,0.018c7.792,7.809,20.496,7.834,28.314,0.001c0.006-0.007,0.013-0.012,0.019-0.018
+            l104-104.504C381.966,393.785,381.939,381.121,374.108,373.328z"
+                      />
+                    </g>
+                  </g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"
+    ></script>
+
+    <script>
+      $(document).mousemove(function (event) {
+        $(".box").each(function (index, element) {
+          var xPos = event.clientX / $(window).width() - 0.5,
+            //yPos = (event.clientY / $(window).height()) - 0.5,
+
+            box = element;
+
+          TweenLite.to(box, 1, {
+            rotationY: xPos * 100,
+
+            //rotationX: yPos * 100,
+
+            ease: Power1.easeOut,
+          });
+        });
+      });
+    </script>
+
+    <script type="text/javascript">
+      window.addEventListener("beforeunload", function () {
+        document.body.classList.add("animate-out");
+      });
+
+      $(document).on("mousemove", function (event) {
+        var $mouseX = event.pageX,
+          $mouseY = event.pageY;
+
+        $("span1").css("margin-top", -($mouseY * 0.03) + "px");
+
+        $("span1").css("margin-left", -($mouseX * 0.05) + "px");
+
+        $("span3").css("margin-top", +($mouseY * 0.01) + "px");
+
+        $("span3").css("margin-left", +($mouseX * 0.05) + "px");
+
+        $("span2 .city1").css("bottom", +($mouseY * 0) + "px");
+        $("span2 .city1").css("margin-left", +($mouseX * 0.01) + "px");
+
+        $("span2 .city2").css("bottom", -($mouseY * 0.01) + "px");
+        $("span2 .city2").css("margin-left", -($mouseX * 0.02) + "px");
+
+        $("span2 .city3").css("bottom", +($mouseY * 0.01) + "px");
+        $("span2 .city3").css("margin-left", +($mouseX * 0.03) + "px");
+      });
+    </script>
+
+    <script>
+      var id = null;
+
+      function handleAirplaneMove() {
+        var elem = document.getElementById("animateAirplane");
+
+        var pos = 0;
+
+        clearInterval(id);
+
+        id = setInterval(frame, 1);
+
+        function frame() {
+          if (pos == 1500) {
+            clearInterval(id);
+          } else {
+            pos++;
+
+            elem.style.bottom = pos + "px";
+
+            elem.style.left = pos + "px";
+          }
+        }
+
+        document.body.classList.add("animate-out");
+
+        setTimeout(function () {
+          window.location = "airline.html";
+        }, 1500);
+      }
+
+      function handleGroundMove() {
+        var elem = document.getElementById("animateGround");
+
+        var pos = 0;
+
+        clearInterval(id);
+
+        id = setInterval(frame, 10);
+
+        function frame() {
+          if (pos == 1500) {
+            clearInterval(id);
+          } else {
+            pos++;
+
+            elem.style.top = pos + "px";
+
+            elem.style.bottom = pos + "px";
+          }
+        }
+
+        document.body.classList.add("animate-out");
+
+        setTimeout(function () {
+          window.location = "standard-menu.html";
+        }, 1000);
+      }
+    </script>
+  </body>
+</html>

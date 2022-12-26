@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+
+    <title>Aviation Services</title>
+
+    <link
+      rel="shortcut icon"
+      href="img/favicon-16x16.png"
+      type="image/x-icon"
+    />
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
+
+    <link
+      href="assets/css/aviation-services.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="assets/css/JiSlider.css" />
+
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style type="text/css">
+      * {
+        margin: 0;
+      }
+
+      body {
+        overflow-x: hidden;
+
+        width: 100%;
+
+        height: 100%;
+
+        padding: 0;
+
+        margin: 0;
+      }
+
+      .absolute {
+        position: absolute;
+      }
+
+      .relative {
+        position: relative;
+      }
+
+      #JiSlider {
+        width: 100%;
+
+        height: 100%;
+
+        max-height: 100vh;
+
+        overflow: hidden;
+      }
+
+      .navigation {
+        position: fixed;
+
+        z-index: 9;
+      }
+
+      #menuToggle {
+        display: block;
+        position: relative;
+        top: 20px;
+        left: 20px;
+        z-index: 1;
+        -webkit-user-select: none;
+        user-select: none;
+        padding: 8px;
+        background: #d7c094;
+        border-radius: 2px;
+      }
+
+      #menuToggle::after {
+        content: "MENU";
+        position: absolute;
+        top: 8px;
+        left: 150%;
+        font-weight: bold;
+      }
+
+      #menuToggle a {
+        text-decoration: none;
+
+        color: #4a433b;
+
+        transition: color 0.3s ease;
+
+        text-transform: uppercase;
+
+        font-family: "Playfair Display SC", serif;
+
+        font-weight: bold;
+
+        font-size: 21px;
+      }
+
+      #dropbtnId3 div > span {
+        text-transform: uppercase;
+
+        width: 100% !important;
+
+        display: block;
+
+        font-family: "Playfair Display SC", serif;
+
+        font-weight: bold;
+
+        font-size: 21px;
+      }
+
+      #dropbtnId3 div span i {
+        position: relative;
+
+        top: 7px;
+
+        float: right;
+      }
+
+      #dropbtnId3 div span::first-letter {
+        font-size: 120%;
+      }
+
+      #menuToggle a::first-letter {
+        font-size: 120%;
+      }
+
+      #menuToggle .dropdown-content .dropdown-content a {
+        text-transform: none !important;
+
+        font-family: Helvetica, sans-serif;
+
+        font-size: 14px;
+
+        font-weight: normal;
+
+        line-height: 1;
+      }
+
+      #myDropdownServices {
+        margin-top: 15px;
+      }
+
+      #menuToggle a:hover {
+        color: #a27b1f;
+      }
+
+      #menuToggle input {
+        display: block;
+
+        width: 40px;
+
+        height: 32px;
+
+        position: absolute;
+
+        top: -7px;
+
+        left: -5px;
+
+        cursor: pointer;
+
+        opacity: 0;
+
+        z-index: 2;
+
+        -webkit-touch-callout: none;
+      }
+
+      #menuToggle span {
+        display: block;
+
+        width: 33px;
+
+        height: 4px;
+
+        margin-bottom: 5px;
+
+        position: relative;
+
+        background: #000000;
+
+        border-radius: 3px;
+
+        z-index: 1;
+
+        transform-origin: 4px 0px;
+
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+          background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+      }
+
+      #menuToggle span:first-child {
+        transform-origin: 0% 0%;
+      }
+
+      #menuToggle span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+      }
+
+      #menuToggle input:checked ~ span {
+        opacity: 1;
+
+        transform: rotate(45deg) translate(-2px, -1px);
+
+        background: #232323;
+      }
+
+      #menuToggle input:checked ~ span:nth-last-child(3) {
+        opacity: 0;
+
+        transform: rotate(0deg) scale(0.2, 0.2);
+      }
+
+      #menuToggle input:checked ~ span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(0, -1px);
+      }
+
+      #menu {
+        position: absolute;
+
+        width: 400px;
+
+        margin: -100px 0 0 -50px;
+
+        padding: 50px;
+
+        height: 100vh;
+
+        padding-top: 125px;
+
+        height: calc(100vh + 55px);
+
+        background: #d9b86a;
+
+        list-style-type: none;
+
+        -webkit-font-smoothing: antialiased;
+
+        transform-origin: 0% 0%;
+
+        transform: translate(-100%, 0);
+
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+
+        color: #4a433b;
+      }
+
+      #menu i {
+        margin-left: auto;
+      }
+
+      #menu h2 {
+        margin-bottom: 1em;
+
+        font-size: 22px;
+
+        display: flex;
+
+        align-items: center;
+
+        cursor: pointer;
+
+        font-weight: bold;
+
+        font-family: "Playfair Display SC", serif;
+
+        text-transform: uppercase;
+
+        text-align: left;
+
+        color: #4a433b;
+      }
+
+      #menu h2 span {
+        font-size: 110%;
+
+        background: none;
+
+        width: auto;
+
+        height: initial;
+
+        margin: 0;
+      }
+
+      #menu li {
+        padding: 5px 0;
+
+        font-size: 22px;
+
+        display: flex;
+      }
+
+      #menu li div {
+        display: flex;
+
+        align-items: center;
+
+        width: 100%;
+      }
+
+      #menuToggle input:checked ~ ul {
+        transform: none;
+      }
+
+      .logo {
+        right: 0;
+
+        top: 0;
+
+        z-index: 9;
+
+        margin: 20px;
+      }
+
+      .logo img {
+        width: 90px;
+      }
+
+      .dropdown-content {
+        display: none;
+      }
+
+      .dropdown-content li span {
+        background: none !important;
+
+        width: auto !important;
+
+        height: auto !important;
+      }
+
+      .dropdown-content hr {
+        margin: 0;
+
+        opacity: 0.65;
+      }
+
+      .show {
+        display: block;
+      }
+
+      .dropbtn {
+        cursor: pointer;
+      }
+
+      .dropbtn i {
+        filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=0);
+
+        -webkit-transform: rotate(0deg);
+
+        -moz-transform: rotate(0deg);
+
+        -ms-transform: rotate(0deg);
+
+        -o-transform: rotate(0deg);
+
+        transform: rotate(0deg);
+
+        width: 20px;
+
+        height: 20px;
+
+        -webkit-transform-origin: 50% 50%;
+
+        -moz-transform-origin: 50% 50%;
+
+        -o-transform-origin: 50% 50%;
+
+        transform-origin: 50% 50%;
+
+        transition: transform 0.3s ease;
+      }
+
+      #menu hr {
+        border-color: #b8996c;
+
+        border: inherit;
+
+        height: 1px;
+
+        background: #b8996c;
+      }
+
+      .dropbtn.opened i {
+        filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=1);
+
+        -webkit-transform: rotate(90deg);
+
+        -moz-transform: rotate(90deg);
+
+        -ms-transform: rotate(90deg);
+
+        -o-transform: rotate(90deg);
+
+        transform: rotate(90deg);
+
+        -webkit-transform-origin: 50% 50%;
+
+        -moz-transform-origin: 50% 50%;
+
+        -o-transform-origin: 50% 50%;
+
+        transform-origin: 50% 50%;
+
+        transition: transform 0.3s ease;
+      }
+
+      #myDropdownAbout li,
+      #myDropdownServices li {
+        padding-left: 10px;
+
+        font-size: 99%;
+
+        height: 25px;
+
+        font-size: 14px !important;
+
+        font-family: Helvetica, sans-serif;
+
+        height: 30px;
+
+        line-height: 1.4;
+
+        padding-top: 0;
+
+        padding-bottom: 0;
+      }
+
+      #myDropdownGround {
+        padding-left: 10px;
+      }
+
+      #myDropdownGroundCatering {
+        padding-left: 30px;
+      }
+
+      .animate-in {
+        -webkit-animation: fadeIn 1.5s ease-in;
+
+        animation: fadeIn 1.5s ease-in;
+      }
+
+      .animate-out {
+        -webkit-transition: opacity 1.5s;
+
+        transition: opacity 1.5s;
+
+        opacity: 0;
+      }
+
+      @-webkit-keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="animate-in about-page">
+    <div class="logo absolute">
+      <a href="index.html"><img src="img/logo-logo.png" /></a>
+    </div>
+
+    <nav role="navigation" class="absolute navigation">
+      <div id="menuToggle">
+        <input type="checkbox" />
+
+        <span></span>
+
+        <span></span>
+
+        <span style="margin-bottom: 0"></span>
+
+        <ul id="menu">
+          <h2
+            onclick="myFunctionGround()"
+            class="opened dropbtn"
+            id="dropbtnId1"
+          >
+            Aviation Catering
+            <i>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <defs>
+                  <path
+                    id="path-1"
+                    fill-rule="evenodd"
+                    d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z"
+                  />
+
+                  <mask
+                    id="mask-2"
+                    maskContentUnits="userSpaceOnUse"
+                    maskUnits="userSpaceOnUse"
+                  >
+                    <rect width="24" height="24" x="0" y="0" fill="black" />
+
+                    <use fill="white" xlink:href="#path-1" />
+                  </mask>
+
+                  <rect
+                    id="rect-3"
+                    width="50"
+                    height="50"
+                    x="0"
+                    y="0"
+                    rx="0"
+                    ry="0"
+                  />
+
+                  <mask
+                    id="mask-4"
+                    maskContentUnits="userSpaceOnUse"
+                    maskUnits="userSpaceOnUse"
+                  >
+                    <rect width="24" height="24" x="0" y="0" fill="black" />
+
+                    <use fill="white" xlink:href="#rect-3" />
+                  </mask>
+                </defs>
+
+                <g>
+                  <use fill="none" xlink:href="#path-1" />
+
+                  <g mask="url(#mask-2)">
+                    <g transform="translate(-13 -13)">
+                      <use fill="rgb(0,0,0)" xlink:href="#rect-3" />
+
+                      <g mask="url(#mask-4)" />
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </i>
+          </h2>
+
+          <div id="myDropdownGround" class="dropdown-content show">
+            <li><a href="airline.html">Home</a></li>
+
+            <hr />
+
+            <li><a href="airline-about.html">About Us</a></li>
+
+            <hr />
+
+            <li onclick="myFunctionServices()" class="dropbtn" id="dropbtnId3">
+              <div>
+                <span
+                  >Services
+
+                  <i>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <defs>
+                        <path
+                          id="path-1"
+                          fill-rule="evenodd"
+                          d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z"
+                        />
+
+                        <mask
+                          id="mask-2"
+                          maskContentUnits="userSpaceOnUse"
+                          maskUnits="userSpaceOnUse"
+                        >
+                          <rect
+                            width="24"
+                            height="24"
+                            x="0"
+                            y="0"
+                            fill="black"
+                          />
+
+                          <use fill="white" xlink:href="#path-1" />
+                        </mask>
+
+                        <rect
+                          id="rect-3"
+                          width="50"
+                          height="50"
+                          x="0"
+                          y="0"
+                          rx="0"
+                          ry="0"
+                        />
+
+                        <mask
+                          id="mask-4"
+                          maskContentUnits="userSpaceOnUse"
+                          maskUnits="userSpaceOnUse"
+                        >
+                          <rect
+                            width="24"
+                            height="24"
+                            x="0"
+                            y="0"
+                            fill="black"
+                          />
+
+                          <use fill="white" xlink:href="#rect-3" />
+                        </mask>
+                      </defs>
+
+                      <g>
+                        <use fill="none" xlink:href="#path-1" />
+
+                        <g mask="url(#mask-2)">
+                          <g transform="translate(-13 -13)">
+                            <use fill="rgb(0,0,0)" xlink:href="#rect-3" />
+
+                            <g mask="url(#mask-4)" />
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </i>
+                </span>
+              </div>
+            </li>
+
+            <hr />
+
+            <div id="myDropdownServices" class="dropdown-content">
+              <li>
+                <a href="in-flight-catering-menu.html"
+                  >In Flight Catering Menu</a
+                >
+              </li>
+              <li><a href="production.html">Production</a></li>
+
+              <li
+                onclick="myFunctionGroundCatering()"
+                class="dropbtn"
+                id="dropbtnId2"
+              >
+                Airline Catering
+                <i>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <defs>
+                      <path
+                        id="path-1"
+                        fill-rule="evenodd"
+                        d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z"
+                      />
+
+                      <mask
+                        id="mask-2"
+                        maskContentUnits="userSpaceOnUse"
+                        maskUnits="userSpaceOnUse"
+                      >
+                        <rect width="24" height="24" x="0" y="0" fill="black" />
+
+                        <use fill="white" xlink:href="#path-1" />
+                      </mask>
+
+                      <rect
+                        id="rect-3"
+                        width="50"
+                        height="50"
+                        x="0"
+                        y="0"
+                        rx="0"
+                        ry="0"
+                      />
+
+                      <mask
+                        id="mask-4"
+                        maskContentUnits="userSpaceOnUse"
+                        maskUnits="userSpaceOnUse"
+                      >
+                        <rect width="24" height="24" x="0" y="0" fill="black" />
+
+                        <use fill="white" xlink:href="#rect-3" />
+                      </mask>
+                    </defs>
+
+                    <g>
+                      <use fill="none" xlink:href="#path-1" />
+
+                      <g mask="url(#mask-2)">
+                        <g transform="translate(-13 -13)">
+                          <use fill="rgb(0,0,0)" xlink:href="#rect-3" />
+
+                          <g mask="url(#mask-4)" />
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </i>
+              </li>
+
+              <div
+                id="myDropdownGroundCatering"
+                class="dropdown-content ground-cat"
+                style="margin-bottom: 15px"
+              >
+                <hr />
+
+                <li style="margin-top: 15px">
+                  <a href="vip-and-private-jet-catering.html"
+                    >Vip and Private Jet Catering</a
+                  >
+                </li>
+
+                <li>
+                  <a href="buy-on-board.html">Buy on Board</a>
+                </li>
+
+                <li><a href="aviation-services.html">Aviation Services</a></li>
+              </div>
+
+              <!-- <hr> -->
+            </div>
+
+            <hr />
+
+            <li><a href="contact-us-airline.html">Contact Us</a></li>
+          </div>
+
+          <!-- <h2 onclick="myFunctionAvio()" class="dropbtn" id="dropbtnId4">
+
+          Aviation Catering
+
+          <i>
+
+            <i>
+
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24"
+
+                viewBox="0 0 24 24">
+
+                <defs>
+
+                  <path id="path-1" fill-rule="evenodd" d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z" />
+
+                  <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="userSpaceOnUse">
+
+                    <rect width="24" height="24" x="0" y="0" fill="black" />
+
+                    <use fill="white" xlink:href="#path-1" />
+
+                  </mask>
+
+                  <rect id="rect-3" width="50" height="50" x="0" y="0" rx="0" ry="0" />
+
+                  <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="userSpaceOnUse">
+
+                    <rect width="24" height="24" x="0" y="0" fill="black" />
+
+                    <use fill="white" xlink:href="#rect-3" />
+
+                  </mask>
+
+                </defs>
+
+                <g>
+
+                  <use fill="none" xlink:href="#path-1" />
+
+                  <g mask="url(#mask-2)">
+
+                    <g transform="translate(-13 -13)">
+
+                      <use fill="rgb(0,0,0)" xlink:href="#rect-3" />
+
+                      <g mask="url(#mask-4)" />
+
+                    </g>
+
+                  </g>
+
+                </g>
+
+              </svg>
+
+            </i>
+
+          </i>
+
+        </h2> -->
+        </ul>
+      </div>
+    </nav>
+
+    <div class="section-3">
+      <div class="foods">
+        <div class="food-item">
+          <h2>Company<br />Information</h2>
+
+          <hr />
+
+          <div class="txt">
+            <b>
+              Airport Catering is the largest independent provider of catering
+              and provisioning services in Serbia, with production capacity of
+              over 30.000 meals per day. Located at privileged Belgrade Airport
+              zone, few steps from the international gates, Airport Catering is
+              proud airline and ground catering service provider. <br />
+              <br />
+            </b>
+
+            <p>
+              <span>*</span> Facility location, our property is based at airport
+              zone (Airport Nikola Tesla), pretty unique. We are in position to
+              be very effective 24h/7 operations
+            </p>
+
+            <p>
+              <span>*</span> ABC is established in 1952. We are proud on over 60
+              years of our history.
+            </p>
+
+            <p><span>*</span> Production capacity is 30.000 full meals</p>
+            <p>
+              <span>*</span> Airport Catering chefs work with you on every
+              critical detail, so that your menus are outstanding in every way –
+              from recipe selection and refinements, through food safety and
+              hygiene, to the final presentation – all while adhering to your
+              budget parameters and specifications
+            </p>
+
+            <p>
+              <span>*</span> Key assets are ownership of air side building, high
+              loaders, kitchen equipment
+            </p>
+          </div>
+
+          <img src="img/anis2.png" />
+        </div>
+      </div>
+    </div>
+
+    <div class="section-3 sec-4">
+      <div class="big-img"></div>
+
+      <div class="foods">
+        <div class="food-item">
+          <h2>
+            Quality and <br />Food Safety
+            <hr />
+          </h2>
+
+          <div class="txt">
+            <b>
+              From concept creation and food preparation to passenger
+              satisfaction, we have an outstanding track record when it comes to
+              quality. Quality, safety and security are fundamental priorities
+              to the company and it has comprehensive management structures,
+              policies, values and principles that focus on these issues.<br />
+              <br />
+            </b>
+
+            <p>
+              The day-to-day operations are governed by strict quality standards
+              and systems that live up to both airline customer and passenger
+              expectations on a consistent basis, while meeting all applicable
+              international and regional laws and regulations:
+            </p>
+
+            <p>
+              <span>*</span>Certificate issued by Civil Aviation Directorate in
+              2006, according to which Airport Catering has permit to provide
+              catering services to all domestic/international airlines at
+              Airport Nikola Tesla
+            </p>
+
+            <p>
+              <span>*</span> HACCP standard was implemented in 2006, issued by
+              reputable Swiss institute SGS. Every year SGS is conducting audit
+              of the HACCP certificate.
+            </p>
+
+            <p>
+              <span>*</span> ISO 22000 standard implemented. Every 3rd year
+              audit is successfully passed and recertified
+            </p>
+            <p>
+              <span>*</span> ISO 22000 standard implemented. Every 3rd year
+              audit is successfully passed and recertified.
+            </p>
+            <p>
+              <span>*</span> Halal meals are offered from 2010 in cooperation
+              with Halal Serbia, in order to provide special meals to clients’
+              specific requirements.
+            </p>
+          </div>
+
+          <div class="bedge">
+            <span>
+              <img src="img/h1.jpg" />
+            </span>
+            <span>
+              <img src="img/h2.jpg" />
+            </span>
+            <span>
+              <img src="img/h3.jpg" />
+            </span>
+            <span>
+              <img src="img/h4.jpg" />
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        If you are interested in this kind of cooperation, please feel free to
+
+        <a href="contact-us-airline.html"
+          ><b>contact our Commercial department</b></a
+        >, and our colleagues can give you more information.
+      </p>
+
+      <img src="img/Vector-Smart-Object1.png" />
+    </footer>
+
+    <div id="footer">
+      <div class="footer-logo">
+        <a href="index.html"><img src="img/logo-logo.png" /></a>
+      </div>
+
+      <div class="flex-center">
+        <a href="about.html">About Us</a> |
+
+        <a href="careers.html">Career</a> |
+
+        <a href="contact-us-airline.html">Contact us</a>
+      </div>
+
+      <div class="soc">
+        <div>
+          <a href=""><img src="img/facebook.png" /></a>
+
+          <a href=""><img src="img/twitter.png" /></a>
+
+          <a href=""><img src="img/inst.png" /></a>
+
+          <a href=""><img src="img/linkedin.png" /></a>
+        </div>
+
+        <p>© 2021 Airport Belgrade Catering. All Rights Reserved.</p>
+      </div>
+
+      <div>
+        <p>
+          Aerodrom Catering Beograd Doo <br />
+
+          Beograd 59, Surčin <br />
+
+          +381 11 414 100 <br />
+
+          office@airport-catering.com
+        </p>
+      </div>
+    </div>
+
+    <script>
+      /* When the user clicks on the button, 
+
+      toggle between hiding and showing the dropdown content */
+
+      function myFunctionGround() {
+        document.getElementById("myDropdownGround").classList.toggle("show");
+
+        document.getElementById("dropbtnId1").classList.toggle("opened");
+      }
+
+      function myFunctionGroundCatering() {
+        document
+          .getElementById("myDropdownGroundCatering")
+          .classList.toggle("show");
+
+        document.getElementById("dropbtnId2").classList.toggle("opened");
+      }
+
+      function myFunctionServices() {
+        document.getElementById("myDropdownServices").classList.toggle("show");
+
+        document.getElementById("dropbtnId3").classList.toggle("opened");
+      }
+
+      function myFunctionAvio() {
+        document.getElementById("myDropdownAvio").classList.toggle("show");
+
+        document.getElementById("dropbtnId4").classList.toggle("opened");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+
+      window.onclick = function (event) {
+        if (!event.target.matches(".dropbtn")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+
+          var i;
+
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+
+            // if (openDropdown.classList.contains('show')) {
+
+            //   openDropdown.classList.remove('show');
+
+            // }
+          }
+        }
+      };
+    </script>
+  </body>
+</html>

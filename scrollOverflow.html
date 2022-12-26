@@ -1,0 +1,4569 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="assets/css/sandwiches.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
+	<link rel="stylesheet" type="text/css" href="dist/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+</head>
+<body>
+
+<select id="demosMenu">
+  <option selected>Choose Demo</option>
+  <option id="jquery-adapter">jQuery adapter</option>
+  <option id="active-slide">Active section and slide</option>
+  <option id="auto-height">Auto height</option>
+  <option id="autoplay-video-and-audio">Autoplay Video and Audio</option>
+  <option id="backgrounds">Background images</option>
+  <option id="backgrounds-fixed">Fixed fullscreen backgrounds</option>
+  <option id="background-video">Background video</option>
+  <option id="callbacks-v2-compatible">Callbacks version 2</option>
+  <option id="callbacks-v3">Callbacks version 3</option>
+  <option id="continuous-horizontal">Continuous horizontal</option>
+  <option id="continuous-vertical">Continuous vertical</option>
+  <option id="parallax">Parallax</option>
+  <option id="css3">CSS3</option>
+  <option id="drag-and-move">Drag And Move</option>
+  <option id="easing">Easing</option>
+  <option id="fading-effect">Fading Effect</option>
+  <option id="fixed-headers">Fixed headers</option>
+  <option id="gradient-backgrounds">Gradient backgrounds</option>
+  <option id="interlocked-slides">Interlocked Slides</option>
+  <option id="looping">Looping</option>
+  <option id="methods">Methods</option>
+  <option id="navigation-vertical">Vertical navigation dots</option>
+  <option id="navigation-horizontal">Horizontal navigation dots</option>
+  <option id="navigation-tooltips">Navigation tooltips</option>
+  <option id="no-anchor">No anchor links</option>
+  <option id="normal-scroll">Normal scrolling</option>
+  <option id="normalScrollElements">Normal scroll elements</option>
+  <option id="offset-sections">Offset sections</option>
+  <option id="one-section">One single section</option>
+  <option id="reset-sliders">Reset sliders</option>
+  <option id="responsive-auto-height">Responsive Auto Height</option>
+  <option id="responsive-height">Responsive Height</option>
+  <option id="responsive-width">Responsive Width</option>
+  <option id="responsive-slides">Responsive Slides</option>
+  <option id="scrollBar">Scroll bar enabled</option>
+  <option id="scroll-horizontally">Scroll horizontally</option>
+  <option id="scrollOverflow">Scroll inside sections and slides</option>
+  <option id="scrollOverflow-reset">ScrollOverflow Reset</option>
+  <option id="lazy-load">Lazy load</option>
+  <option id="scrolling-speed">Scrolling speed</option>
+  <option id="trigger-animations">Trigger animations</option>
+  <option id="vue-fullpage">Vue-fullpage component</option>
+</select>
+
+<div id="fullpage">
+	<section class="section" id="section0">
+      
+    <div class="bigSlides">
+      <div class="slider">
+        <br />
+        <div id="myCarousel1" 
+        class="carousel slide carousel-fade" 
+        data-wrap="true" 
+        data-ride="carousel" 
+        data-interval="false" 
+        data-touch="true">
+          <!-- Indicators -->
+          <div class="pagination relative">
+            <img src="img/pagination-top.png" class="absolute-img-top" />
+            <img src="img/pagination-bottom.png" class="absolute-img-bottom" />
+            <!-- <h1><span>S</span>ANDWICHES</h1>
+            <hr /> -->
+            <!-- Left and right controls -->
+            <div class="relative">
+            <div class="controls">
+              <a class="left carousel-control" href="#myCarousel1" role="button" data-slide="prev">
+                <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="106.667,53.333 0,160 213.333,160" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel1" role="button" data-slide="next">
+                <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="0,53.333 106.667,160 213.333,53.333" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+            </div>
+            <span class="relative sandwich-wrapper-mobile">
+            <h1 class="small-visible sandwiches-click">SANDWICHES <i class="plus">+</i><i class="minus">-</i></h1>
+          <div>
+            <h1 data-target="#myCarousel1" data-slide-to="0">SANDWICHES</h1>
+            <hr />
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel1" data-slide-to="1">
+                00001 | Turkey and Avocado Sandwich
+              </li>
+              <li data-target="#myCarousel1" data-slide-to="2">
+                00002 | Falafel Sandwich
+              </li>
+              <li data-target="#myCarousel1" data-slide-to="3">
+                00003 | Vegetarian Sandwich
+              </li>
+              <li data-target="#myCarousel1" data-slide-to="4">
+                00004 | Avocado Blt Sandwich
+              </li>
+              <li data-target="#myCarousel1" data-slide-to="5">
+                00005 | Grilled Chicken Sandwich
+              </li>
+              <li data-target="#myCarousel1" data-slide-to="6">
+                00006 | Grilled Chicken Sandwich
+              </li>
+              <li data-target="#myCarousel1" data-slide-to="7">
+                00007 | Montenegrian Prosciutto Sandwich
+              </li>
+              <li data-target="#myCarousel1" data-slide-to="8">
+                00008 | Sandwich with Smoked Salmon
+              </li>
+              <li data-target="#myCarousel1" data-slide-to="9">
+                00009 | Prague Ham and Cheese Sandwich
+              </li>
+              <li data-target="#myCarousel1" data-slide-to="10">
+                00010 | Caprese Sandwich
+              </li>
+              <li data-target="#myCarousel1" data-slide-to="11">
+                00011 | Smoked Chicken Breast Sandwich
+              </li>
+              <li data-target="#myCarousel1" data-slide-to="12">
+                00012 | Nutrimat | Smoked Beef Sandwich
+              </li>
+              <li data-target="#myCarousel1" data-slide-to="13">
+                00013 | Nutrimat | Cured Pork Sandwich
+              </li>
+              <li data-target="#myCarousel1" data-slide-to="14">
+                00014 | Nutrimat | Caesar Sandwich
+              </li>
+              <li data-target="#myCarousel1" data-slide-to="15">
+                00015 | Nutrimat | Beef Prosciutto Sandwich
+              </li>
+              <li data-target="#myCarousel1" data-slide-to="16">
+                00016 | Nutrimat | Ham and Cheese Sandwich
+              </li>
+              <li data-target="#myCarousel1" data-slide-to="17">
+                00017 | Nutrimat | Pork Prosciutto Sandwich
+              </li>
+              <li data-target="#myCarousel1" data-slide-to="18">
+                00018 | Nutrimat | Breaded Chicken Sandwich
+              </li>
+              <li data-target="#myCarousel1" data-slide-to="19">
+                00019 | Nutrimat | Sandwich with Ham and Cheese
+              </li>
+              <li data-target="#myCarousel1" data-slide-to="20">
+                00020 | Nutrimat | Sandwich with Cured Pork
+              </li>
+              <li data-target="#myCarousel1" data-slide-to="21">
+                00021 | Nutrimat | Sandwich with Smoked Chicken
+              </li>
+              <li data-target="#myCarousel1" data-slide-to="22">
+                00022 | Nutrimat | Sandwich with Smoked Turkey
+              </li>
+              <li data-target="#myCarousel1" data-slide-to="23">
+                00023 | Nutrimat | Sandwich with Smoked Beef
+              </li>
+              <li data-target="#myCarousel1" data-slide-to="24">
+                00024 | Nutrimat | Ham and Cheese Sandwich
+              </li>
+              
+
+            </ol>
+          </div>
+          </span>
+            <hr />
+          </div>
+          </div>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner relative" role="listbox">
+
+
+            <div class="controls absolute">
+              <a class="left carousel-control" href="#myCarousel1" role="button" data-slide="prev">
+                <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="106.667,53.333 0,160 213.333,160" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel1" role="button" data-slide="next">
+                <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="0,53.333 106.667,160 213.333,53.333" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+            </div>
+
+
+            <div class="item relative active">
+
+              <!-- <span class="absolute s1-1">
+                <img src="img/s1-1.png" />
+              </span> -->
+
+              <span class="absolute s1-5">
+                <img src="img/s1-5.png" />
+              </span>
+
+              <span class="absolute s1-6">
+                <img src="img/s1-6.png" />
+              </span>
+
+              <span class="absolute s1-7">
+                <img src="img/s1-7.png" />
+              </span>
+              <span class="absolute s1-4">
+                <img src="img/s1-4.png" />
+                <p>Smoked Salmon</p>
+              </span>
+              <div class="food-img food-img-0 relative">
+
+                <span class="absolute s1-2">
+                  <img src="img/s1-2.png" />
+                  <p>Avocado</p>
+                </span>
+                <span class="absolute s1-3">
+                  <img src="img/s1-3.png" />
+                  <p>Toasted Almond</p>
+                </span>
+
+
+                <img src="img/sandwich-1.png" class="main-img" alt="Chania" width="460" height="345" />
+                <img src="img/meni-responsive.png" class="main-img mobile-visible" />
+              </div>
+              <div class="carousel-caption">
+                <p style="position: relative; top: 20px;">
+                  Carefully selected sandwich selection matches with the best
+                  handmade products from our bakery. Sandwiches are composed
+                  of the highest quality and freshest ingredients, taking into
+                  account that homemade food is used primarily.
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/sandwich-2.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Turkey and avocado sandwich</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Smoked Turkey | Avocado | Cheese with Peppercorns |
+                  Arugula | Tomato | Aioli | Focaccia
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/sandwich-3.png" alt="Chania" width="460" height="345" />
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Falafel Sandwich</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Falafel | Avocado Mash | Tomato | Chard | Sunflower Seeds, | Pickled Peppers, | Onion | Lemon |
+                  Tahini | Pita Bread
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/sandwitches/0003.png" alt="Chania" width="460" height="345" />
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Vegetarian Sandwich</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Avocado | Tomato | Chard | Baby spinach | Red Onion | Toasted almonds |
+                  Spicy hummus | Bread Roll with Chia Seeds 
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/sandwitches/0004.png" alt="Chania" width="460" height="345" />
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Avocado Blt Sandwich</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Avocado | Tomato | Crispy bacon |
+                  Summer spread | Bread Roll with Nettle 
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/sandwitches/0005.png" alt="Chania" width="460" height="345" />
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Grilled Chicken Sandwich</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Smoked Salmon | Tomato | Cucumber | Cream Cheese with Dill and Horseradish |
+                  Bread Roll with cuttlefish ink
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/sandwitches/0006.png" alt="Chania" width="460" height="345" />
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Grilled Chicken sandwich</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Avocado | Tomato | Griled Chicken | Red Onion | Letuce Mix |
+                  Aioli | Bavarian Roll  
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/sandwitches/0007.png" alt="Chania" width="460" height="345" />
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Montenegrian Prosciutto sandwich</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Cottage Cheese and Hot Chilly | Paprika Spread - "urnebes" | Njegushki Prshut (Prosciutto from Montenegro) |
+                  Feta Cheese | Cucumber | Red Coral Lettuce 
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/sandwitches/0008.png" alt="Chania" width="460" height="345" />
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Sandwich with Smoked Salmon</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Spread with Dill | Smoked Salmon | Capers | 
+                  Pickeles | Red Coral Lettuce 
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/sandwitches/0009.png" alt="Chania" width="460" height="345" />
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Prague Ham and Cheese Sandwich</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Mayonnaise | Prague Ham | Yellow Cheese | Cucumber
+                  Tomato | Red Coral Lettuce
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/sandwitches/00010.png" alt="Chania" width="460" height="345" />
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Caprese Sandwich</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Pesto | Tomato | Mmozzarella | Red Coral Lettuce
+                 
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/sandwitches/00011.png" alt="Chania" width="460" height="345" />
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Smoked Chicken Breast Sandwich</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Honey | Tomato | Mustard and Mayonnaise | Spread | Smoked Chicken | Yellow Cheese |
+                  Cucumber | Red Coral Lettuce 
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/sandwitches/00012.png" alt="Chania" width="460" height="345" />
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimad | Smoked Beef Sandwich</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Cornbread Roll | Hummus | Smoked Beef | Pickles |
+                  Yellow Cheese 
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/sandwitches/00013.png" alt="Chania" width="460" height="345" />
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimad | Cured Pork Sandwich</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Rye Bread Roll | Pesto | Cured Pork Tenderloin | Sun-Dried Tomatmo |
+                  Yellow Cheese 
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/sandwitches/00014.png" alt="Chania" width="460" height="345" />
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimad | Caesar Sandwich</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Bavarian Roll | Grilled Chicken | Caesar Spread | Bacon |
+                  Sun-Dried Tomatmo  
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/sandwitches/00015.png" alt="Chania" width="460" height="345" />
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimad | Beef Prosciutto Sandwich</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Bread Roll with Chia Seeds | Honey | Mustard and Mayonnaise | Spread |
+                  Yellow Cheese | Beef Prosciutto | Pickles 
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/sandwitches/00016.png" alt="Chania" width="460" height="345" />
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimad | Ham and Cheese Sandwich</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  White Bread Roll | Ketchup | Prague Ham | Yellow Cheese |
+                  
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/sandwitches/00017.png" alt="Chania" width="460" height="345" />
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimad | Pork Prosciutto Sandwich</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  White Bread Roll with Sesame Seeds | Pesto and Mayonnaise | Pork Prosciutto |
+                  Sun-Dried Tomatmo | Yellow Cheese
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/sandwitches/00018.png" alt="Chania" width="460" height="345" />
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimad | Breaded Chicken Sandwich</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  White Bread Roll | Mayonnaise | Pickles |
+                  Breaded Chicken | Yellow Cheese 
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/sandwitches/00019.png" alt="Chania" width="460" height="345" />
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimad | Sandwich with Ham and Cheese</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  White Toast | Margarine | Prague Ham | Yellow Cheese 
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/sandwitches/00020.png" alt="Chania" width="460" height="345" />
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimad | Sandwich with Cured Pork</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  White Toast | Mayonnaise and BBQ Spread | Cured Pork Tenderloin |
+                  Yellow Cheese
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/sandwitches/00021.png" alt="Chania" width="460" height="345" />
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimad | Sandwich with Smoked Chicken</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Rye Bread Toast | Mayonnaise and Pesto Spread | Smoked Chicken Breast |
+                  Yellow Cheese
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/sandwitches/00022.png" alt="Chania" width="460" height="345" />
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimad | Vegetarian Sandwich</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Rye Bread Toast | Tartare Sauce Spread | Smoked Turkey |
+                  Sliced Cheese
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/sandwitches/00023.png" alt="Chania" width="460" height="345" />
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimad | Sandwich with Smoked Beef</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  White Toast | Mayonnaise and Mustard | Spread |
+                  Smoked Beef | Cheddar Cheese
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/sandwitches/00024.png" alt="Chania" width="460" height="345" />
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimad | Ham and Cheese Sandwich</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  White Toast | Mayonnaise | Sour Cream and Pickle Spread |
+                  Prague Ham | Yellow Cheese
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="section1">
+    <div class="bigSlides">
+      <div class="slider">
+        <br />
+        <div id="myCarousel2" 
+        class="carousel slide carousel-fade" 
+        data-wrap="true" 
+        data-ride="carousel" 
+        data-interval="false" 
+        data-touch="true">
+          <!-- Indicators -->
+          <div class="pagination relative">
+            
+            <img src="img/tortilla/w5.png" class="absolute-img-bottom" />
+            <!-- <h1><span>S</span>ANDWICHES</h1>
+            <hr /> -->
+            <!-- Left and right controls -->
+            <div class="relative">
+            <div class="controls">
+              <a class="left carousel-control" href="#myCarousel2" role="button" data-slide="prev">
+                <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="106.667,53.333 0,160 213.333,160" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel2" role="button" data-slide="next">
+                <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="0,53.333 106.667,160 213.333,53.333" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+            </div>
+            <span class="relative sandwich-wrapper-mobile">
+            <h1 class="small-visible sandwiches-click">SANDWICHES <i class="plus">+</i><i class="minus">-</i></h1>
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel2" data-slide-to="0" class="active">
+                <h1>TORTILLA WRAPS</h1>
+                <hr />
+              </li>
+              
+              <li data-target="#myCarousel2" data-slide-to="1">
+                00025 | Nutrimat | Mexican Tortilla Wrap
+              </li>
+              <li data-target="#myCarousel2" data-slide-to="2">
+                00026 | Nutrimat | Tortilla with Prague Ham
+              </li>
+              <li data-target="#myCarousel2" data-slide-to="3">
+                00027 | Nutrimat | Tortilla with Breaded Chicken
+              </li>
+              <li data-target="#myCarousel2" data-slide-to="4">
+                00028 | Nutrimat | Tortilla with Smoked Beef
+              </li>
+            </ol>
+          </span>
+            <hr />
+          </div>
+          </div>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner relative" role="listbox">
+
+
+            <div class="controls absolute">
+              <a class="left carousel-control" href="#myCarousel2" role="button" data-slide="prev">
+                <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="106.667,53.333 0,160 213.333,160" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel2" role="button" data-slide="next">
+                <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="0,53.333 106.667,160 213.333,53.333" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+            </div>
+
+
+            <div class="item relative active">
+
+              <!-- <span class="absolute s1-1">
+                <img src="img/s1-1.png" />
+              </span> -->
+
+              <span class="absolute s1-5">
+                
+              </span>
+              <span class="absolute s1-4">
+                <img src="img/tortilla/w2.png" />
+                <p>Chicken Fillet</p>
+              </span>
+              <div class="food-img food-img-0 relative">
+
+                <span class="absolute s1-2">
+                  <img src="img/tortilla/w3.png" />
+                  <p>Pesto Spread</p>
+                </span>
+                <span class="absolute s1-3">
+                  <img src="img/tortilla/w4.png" />
+                  <p>Sun-Dried Tomato</p>
+                </span>
+
+
+                <img src="img/tortilla/wrap.png" class="main-img" alt="Chania" width="460" height="345" />
+                <img src="img/meni-responsive.png" class="main-img mobile-visible" />
+              </div>
+              <div class="carousel-caption">
+                <p style="position: relative; top: 20px;">
+                 Carefully selected selection of wrap tortilla, composed of
+                 the highest quality and freshest ingredients.
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/tortilla/00025.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Mexican Tortilla Wrap</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Tortilla | BBQ Sauce and Sweet & Spicy Sauce | Chicken Fillet |
+                  Red Kidney Beans | Sweet Corn | Marinated Peppers |
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/tortilla/00026.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Tortilla with Prague Ham</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Tortilla | Pesto and Mayonnaise Spread | Prague Ham |
+                  Yellow Cheese | Sun-Dired Tomato
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/tortilla/00027.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Tortilla with Breaded Chicken</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Tortilla | Breaded Chicken | Tartare Sauce |
+                  Yellow Cheese | Pickles
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/tortilla/00028.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible"> Nutrimat | Tortilla with Smoked Beef</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Tortilla | Smoked Beef | Honey & Mustard Mayonnaise |
+                  Yellow Cheese | Pickles | Spread
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="section2">
+    <div class="bigSlides">
+      <div class="slider">
+        <br />
+        <div id="myCarousel3" 
+        class="carousel slide carousel-fade" 
+        data-wrap="true" 
+        data-ride="carousel" 
+        data-interval="false" 
+        data-touch="true">
+          <!-- Indicators -->
+          <div class="pagination relative">
+            
+            <img src="img/bakery/b3.png" class="absolute-img-bottom" />
+            <!-- <h1><span>S</span>ANDWICHES</h1>
+            <hr /> -->
+            <!-- Left and right controls -->
+            <div class="relative">
+            <div class="controls">
+              <a class="left carousel-control" href="#myCarousel3" role="button" data-slide="prev">
+                <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="106.667,53.333 0,160 213.333,160" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel3" role="button" data-slide="next">
+                <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="0,53.333 106.667,160 213.333,53.333" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+            </div>
+            <span class="relative sandwich-wrapper-mobile">
+            <h1 class="small-visible sandwiches-click">SANDWICHES <i class="plus">+</i><i class="minus">-</i></h1>
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel3" data-slide-to="0" class="active">
+                <h1>BAKERY PRODUCTS</h1>
+                <hr />
+              </li>
+              
+              <li data-target="#myCarousel3" data-slide-to="1">
+                00029 | Nutrimat | Fit Hleb
+              </li>
+              <li data-target="#myCarousel3" data-slide-to="2">
+                00030 | Nutrimat | Razani Tost
+              </li>
+              <li data-target="#myCarousel3" data-slide-to="3">
+                00031 | Nutrimat | Hamburger Labla
+              </li>
+              <li data-target="#myCarousel3" data-slide-to="4">
+                00032 | Nutrimat | Bela Kifla
+              </li>
+              <li data-target="#myCarousel3" data-slide-to="5">
+                00033 | Nutrimat | Rolnica
+              </li>
+              <li data-target="#myCarousel3" data-slide-to="6">
+                00034 | Nutrimat | Rolnica sa Cokoladom
+              </li>
+            </ol>
+          </span>
+            <hr />
+          </div>
+          </div>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner relative" role="listbox">
+
+
+            <div class="controls absolute">
+              <a class="left carousel-control" href="#myCarousel3" role="button" data-slide="prev">
+                <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="106.667,53.333 0,160 213.333,160" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel3" role="button" data-slide="next">
+                <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="0,53.333 106.667,160 213.333,53.333" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+            </div>
+
+
+            <div class="item relative active">
+
+              <!-- <span class="absolute s1-1">
+                <img src="img/s1-1.png" />
+              </span> -->
+
+              <span class="absolute s1-5">
+                
+              </span>
+              <span class="absolute s1-4">
+                <img src="img/bakery/b4.png" />
+                <p>Cereals</p>
+              </span>
+              <div class="food-img food-img-0 relative">
+
+                <span class="absolute s1-2">
+                  <img src="img/bakery/b2.png" />
+                  <p>Flour</p>
+                </span>
+                <span class="absolute s1-3">
+                  <img src="img/bakery/b5.png" />
+                  <p>Chocolate</p>
+                </span>
+
+
+                <img src="img/bakery/b1.png" class="main-img" alt="Chania" width="460" height="345" />
+                <img src="img/meni-responsive.png" class="main-img mobile-visible" />
+              </div>
+              <div class="carousel-caption">
+                <p style="position: relative; top: 20px;">
+                Hand - prepared products from our bakery made of the highest
+                quality flour, enriched with various cereals. 
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/bakery/00029.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Fit Hleb</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  White Toast Bread Enriched with a Selection of Cereals
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/bakery/00030.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible"> Nutrimat | Razani Tost</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Rye flour Toast Bread
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/bakery/00031.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Hamburger Labla</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Fresh White Bun Sprinkled with Sesame
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/bakery/00032.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Bela Kifla</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Homemade White Bun
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/bakery/00033.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Rolnica</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Crispy Puff Pastry Roll
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/bakery/00034.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Rolnica sa Cokoladom</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Crispy Puff Pastry Roll Filled with Chocolate
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="section3">
+    <div class="bigSlides">
+      <div class="slider">
+        <br />
+        <div id="myCarousel4" 
+        class="carousel slide carousel-fade" 
+        data-wrap="true" 
+        data-ride="carousel" 
+        data-interval="false" 
+        data-touch="true">
+          <!-- Indicators -->
+          <div class="pagination relative">
+            <img src="img/breakfast/br1.png" class="absolute-img-top" />
+            <img src="img/breakfast/br2.png" class="absolute-img-bottom" />
+            <!-- <h1><span>S</span>ANDWICHES</h1>
+            <hr /> -->
+            <!-- Left and right controls -->
+            <div class="relative">
+            <div class="controls">
+              <a class="left carousel-control" href="#myCarousel4" role="button" data-slide="prev">
+                <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="106.667,53.333 0,160 213.333,160" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel4" role="button" data-slide="next">
+                <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="0,53.333 106.667,160 213.333,53.333" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+            </div>
+            <span class="relative sandwich-wrapper-mobile">
+            <h1 class="small-visible sandwiches-click">SANDWICHES <i class="plus">+</i><i class="minus">-</i></h1>
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel4" data-slide-to="0" class="active">
+                <h1>BREAKFAST</h1>
+                <hr />
+              </li>
+              
+              <li data-target="#myCarousel4" data-slide-to="1">
+                00035 | Rustic Farmhouse Sandwich
+              </li>
+              <li data-target="#myCarousel4" data-slide-to="2">
+                00036 | Florentina Wrap
+              </li>
+              <li data-target="#myCarousel4" data-slide-to="3">
+                00037 | Greek Wrap
+              </li>
+              <li data-target="#myCarousel4" data-slide-to="4">
+                00038 | Energy Wrap
+              </li>
+              <li data-target="#myCarousel4" data-slide-to="5">
+                00039 | Avocado Blt 
+              </li>
+              <li data-target="#myCarousel4" data-slide-to="6">
+                00040 | Keto Energy Brekfast Bowl 
+              </li>
+              <li data-target="#myCarousel4" data-slide-to="7">
+                00041 | Rustic Sausage Breakfast Bowl
+              </li>
+              <li data-target="#myCarousel4" data-slide-to="8">
+                00042 | Mexican Breakfast Bowl
+              </li>
+              <li data-target="#myCarousel4" data-slide-to="9">
+                00043 | Mediterian Breakfast Bowl
+              </li>
+              <li data-target="#myCarousel4" data-slide-to="10">
+                00044 | Muesli 
+              </li>
+              <li data-target="#myCarousel4" data-slide-to="11">
+                00045 | Greek Yogurt 
+              </li>
+              <li data-target="#myCarousel4" data-slide-to="12">
+                00046 | Strawberry Classic
+              </li>
+              <li data-target="#myCarousel4" data-slide-to="13">
+                00047 | Aronia
+              </li>
+              <li data-target="#myCarousel4" data-slide-to="14">
+                00048 | American Pancakes 
+              </li>
+              <li data-target="#myCarousel4" data-slide-to="15">
+                00049 | French Toast
+              </li>
+            </ol>
+          </span>
+            <hr />
+          </div>
+          </div>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner relative" role="listbox">
+
+
+            <div class="controls absolute">
+              <a class="left carousel-control" href="#myCarousel4" role="button" data-slide="prev">
+                <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="106.667,53.333 0,160 213.333,160" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel4" role="button" data-slide="next">
+                <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="0,53.333 106.667,160 213.333,53.333" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+            </div>
+
+
+            <div class="item relative active">
+
+              <!-- <span class="absolute s1-1">
+                <img src="img/s1-1.png" />
+              </span> -->
+
+              <span class="absolute s1-5">
+                <p>Quinoa</p>
+              </span>
+
+             
+
+              <span class="absolute s1-7">
+                <p>Tortilla Wraps</p>>
+              </span>
+              <span class="absolute s1-4">
+                
+                <p>Sandwiches</p>
+              </span>
+              <div class="food-img food-img-0 relative">
+
+                
+                <span class="absolute s1-3">
+                  
+                  <p>Fresh Ingredients</p>
+                </span>
+
+
+                <img src="img/breakfast/breakfast.png" class="main-img" alt="Chania" width="460" height="345" />
+                <img src="img/meni-responsive.png" class="main-img mobile-visible" />
+              </div>
+              <div class="carousel-caption">
+                <p style="position: relative; top: 20px;">
+                  Our salty and sweet breakfast offer made of the best combinations of
+                  sandwiches, wraps, pancakes and refreshing healthy bowls for a great
+                  beginning of the day.
+                  </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/breakfast/00035.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Rustic Farmhouse Sandwich</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Eeggs | Local white Cheese | Dry-Cured Bacon | Brioche
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/breakfast/00036.png" alt="Chania" width="460" height="345" />
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Florentina Wrap</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Egg Whites | Baby Spinach | Emmental Cheese | Pesto |
+                   Tomato | Whole wheat Tortilla
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/breakfast/00037.png" alt="Chania" width="460" height="345" />
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Greek Wrap</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Egg Whites | Feta Cheese | Olives | Tomato | Cucumber |
+                  Pepper | Whole wheat Tortilla
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/breakfast/00038.png" alt="Chania" width="460" height="345" />
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Energy Wrap</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Egg Whites | Chicken | Spinach | Roasted Peppers |
+                  Tomato and Garlic Spread - Pindjur | Whole wheat Tortilla
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/breakfast/00039.png" alt="Chania" width="460" height="345" />
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Avocado Blt</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Avocado | Bacon | Tomato | Mayonnaise | Green Lettuce |
+                  Ciabatta
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/breakfast/00040.png" alt="Chania" width="460" height="345" />
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Keto Energy Brekfast Bowl</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Eggs | Zucchini Noodles | Avocado | Smoked Bacon | Cheddar Cheese
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/breakfast/00041.png" alt="Chania" width="460" height="345" />
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Rustic Sausage Breakfast Bowl</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Rustic Sausage | Eggs | Avocado | Baby Spinach | Quinoa |
+                  Homemade Hot Sauce
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/breakfast/00042.png" alt="Chania" width="460" height="345" />
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Mexican Breakfast Bowl</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Eggs | Quinoa | Red Kidney Beans | Baby Spinach | Lemon |
+                  Cheddar Cheese | Avocado | Aioli
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/breakfast/00043.png" alt="Chania" width="460" height="345" />
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Mediterian Breakfast Bowl</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Eggs | Quinoa | Baby Spinach | Feta Cheese | Tomato | 
+                  Olives | Greek Yogurt
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/breakfast/00044.png" alt="Chania" width="460" height="345" />
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Muesli</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Greek yogurt | Granola | Honey | Apple | Almonds |
+                  Dried Cranberries | Pomegranate
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/breakfast/00045.png" alt="Chania" width="460" height="345" />
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Greek Yogurt</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Greek Yogurt | Blueberries | Chia seeds | Walnuts | Agave
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/breakfast/00046.png" alt="Chania" width="460" height="345" />
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Strawberry Classic</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Falafel | Avocado Mash | Tomato | Chard | Sunflower Seeds, | Pickled Peppers, | Onion | Lemon |
+                  Tahini | Pita Bread
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/breakfast/00047.png" alt="Chania" width="460" height="345" />
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Aronia/h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Greek Yogurt | Banana | Apple | Pomegranate | Almond Butter |
+                  Granola | Strawberries | Aronia
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/breakfast/00048.png" alt="Chania" width="460" height="345" />
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">American Pancakes</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Pancakes with Side Dishes of Your Choice
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/breakfast/00049.png" alt="Chania" width="460" height="345" />
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">French Toast</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  French Toast with Vanilla and Cinnamon, with Side Dishes of Your Choice
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="section4">
+    <div class="bigSlides">
+      <div class="slider">
+        <br />
+        <div id="myCarousel5" 
+        class="carousel slide carousel-fade" 
+        data-wrap="true" 
+        data-ride="carousel" 
+        data-interval="false" 
+        data-touch="true">
+          <!-- Indicators -->
+          <div class="pagination relative">
+            
+            <img src="img/potages-soups/p2.png" class="absolute-img-bottom" />
+            <!-- <h1><span>S</span>ANDWICHES</h1>
+            <hr /> -->
+            <!-- Left and right controls -->
+            <div class="relative">
+            <div class="controls">
+              <a class="left carousel-control" href="#myCarousel5" role="button" data-slide="prev">
+                <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="106.667,53.333 0,160 213.333,160" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel5" role="button" data-slide="next">
+                <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="0,53.333 106.667,160 213.333,53.333" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+            </div>
+            <span class="relative sandwich-wrapper-mobile">
+            <h1 class="small-visible sandwiches-click">SANDWICHES <i class="plus">+</i><i class="minus">-</i></h1>
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel5" data-slide-to="0" class="active">
+                <h1>POTAGES ANS SOUPS</h1>
+                <hr />
+              </li>
+              
+              <li data-target="#myCarousel5" data-slide-to="1">
+                00050 | Creamy Carrot and Orange Potage 
+              </li>
+              <li data-target="#myCarousel5" data-slide-to="2">
+                00051 | Tomato Soup with Griled Vegetables 
+              </li>
+              <li data-target="#myCarousel5" data-slide-to="3">
+                00052 | Creamy Celery and Safron Potage 
+              </li>
+              <li data-target="#myCarousel5" data-slide-to="4">
+                00053 | Creamy Pea and Dill Potage 
+              </li>
+              <li data-target="#myCarousel5" data-slide-to="5">
+                00054 | Creamy Broccoli Potage 
+              </li>
+              <li data-target="#myCarousel5" data-slide-to="6">
+                00055 | Creamy Chicken Soup 
+              </li>
+              <li data-target="#myCarousel5" data-slide-to="7">
+                00056 | Italian Style Tomato with Scampi 
+              </li>
+            </ol>
+          </span>
+            <hr />
+          </div>
+          </div>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner relative" role="listbox">
+
+
+            <div class="controls absolute">
+              <a class="left carousel-control" href="#myCarousel5" role="button" data-slide="prev">
+                <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="106.667,53.333 0,160 213.333,160" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel5" role="button" data-slide="next">
+                <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="0,53.333 106.667,160 213.333,53.333" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+            </div>
+
+
+            <div class="item relative active">
+
+              <!-- <span class="absolute s1-1">
+                <img src="img/s1-1.png" />
+              </span> -->
+
+              <span class="absolute s1-5">
+                <img src="img/potages-soups/p1.png" />
+                <p>Celery</p>
+              </span>
+
+              
+
+              
+              <span class="absolute s1-4">
+                <img src="img/potages-soups/p5.png" />
+                
+              </span>
+              <div class="food-img food-img-0 relative">
+
+                <span class="absolute s1-2">
+                  <img src="img/potages-soups/p3.png" />
+                  <p>Tomato</p>
+                </span>
+                <span class="absolute s1-3">
+                  <img src="img/potages-soups/p4.png" />
+                  <p>Crutons</p>
+                </span>
+
+
+                <img src="img/potages-soups/potages-and-soups.png" class="main-img" alt="Chania" width="460" height="345" />
+                <img src="img/meni-responsive.png" class="main-img mobile-visible" />
+              </div>
+              <div class="carousel-caption">
+                <p style="position: relative; top: 20px;">
+                Warm potages prepared from the freshest vegetables with the 
+                addition of perfectly selected aromatic grasses and seeds. 
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/potages-soups/00050.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Creamy Carrot and Orange Potage</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Carrot | Orange | Pumpkin seeds
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/potages-soups/00051.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Tomato Soup with Griled Vegetables</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Tomato | Griled Vegetables
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/potages-soups/00052.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Creamy Celery and Safron Potage</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Celery | Saffron | Provencal Croutons
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/potages-soups/00053.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Creamy Pea and Dill Potage</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Peas | Dill | Crunchy Chilly Croutons
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/potages-soups/00054.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Creamy Broccoli Potage</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Broccoli | Cashews
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/potages-soups/00055.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Creamy Chicken Soup</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Chicken Meat | Vegetables
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/potages-soups/00056.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Italian Style Tomato with Scampi</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Italian Style Tomato | Scampi
+                </p>
+              </div>
+            </div>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="section5">
+    <div class="bigSlides">
+      <div class="slider">
+        <br />
+        <div id="myCarousel6" 
+        class="carousel slide carousel-fade" 
+        data-wrap="true" 
+        data-ride="carousel" 
+        data-interval="false" 
+        data-touch="true">
+          <!-- Indicators -->
+          <div class="pagination relative">
+            <img src="img/salads/sa3.png" class="absolute-img-top" />
+            
+            <img src="img/salads/sa1.png" class="absolute-img-bottom" />
+            <!-- <h1><span>S</span>ANDWICHES</h1>
+            <hr /> -->
+            <!-- Left and right controls -->
+            <div class="relative">
+            <div class="controls">
+              <a class="left carousel-control" href="#myCarousel6" role="button" data-slide="prev">
+                <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="106.667,53.333 0,160 213.333,160" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel6" role="button" data-slide="next">
+                <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="0,53.333 106.667,160 213.333,53.333" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+            </div>
+            <span class="relative sandwich-wrapper-mobile">
+            <h1 class="small-visible sandwiches-click">SANDWICHES <i class="plus">+</i><i class="minus">-</i></h1>
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel6" data-slide-to="0" class="active">
+                <h1>SALADS</h1>
+                <hr />
+              </li>
+              
+              <li data-target="#myCarousel6" data-slide-to="1">
+                00057 | Chef's Salad
+              </li>
+              <li data-target="#myCarousel6" data-slide-to="2">
+                00058 | Caesar Salad with Baby Spynach
+              </li>
+              <li data-target="#myCarousel6" data-slide-to="3">
+                00059 | Dominican Salad 
+              </li>
+              <li data-target="#myCarousel6" data-slide-to="4">
+                00060 | Falafel Salad 
+              </li>
+              <li data-target="#myCarousel6" data-slide-to="5">
+                00061 | Sombero Salad 
+              </li>
+              <li data-target="#myCarousel6" data-slide-to="6">
+                00062 | Spring Salad 
+              </li>
+              <li data-target="#myCarousel6" data-slide-to="7">
+                00063 | Nicoise Salad 
+              </li>
+              <li data-target="#myCarousel6" data-slide-to="8">
+                00064 | Tuna Caesar Salad 
+              </li>
+              <li data-target="#myCarousel6" data-slide-to="9">
+                00065 | Italian Salad 
+              </li>
+              <li data-target="#myCarousel6" data-slide-to="10">
+                00066 | Greek Salad 
+              </li>
+              <li data-target="#myCarousel6" data-slide-to="11">
+                00067 | Caesar Salad with Chicken
+              </li>
+              <li data-target="#myCarousel6" data-slide-to="12">
+                00068 | Apple Tuna Salad 
+              </li>
+              <li data-target="#myCarousel6" data-slide-to="13">
+                00069 | Lemon Chickpea Salad 
+              </li>
+              <li data-target="#myCarousel6" data-slide-to="14">
+                00070 | Nutrimat | French Salad 
+              </li>
+              <li data-target="#myCarousel6" data-slide-to="15">
+                00071 | Nutrimat | Chicken Breast Salad
+              </li>
+              <li data-target="#myCarousel6" data-slide-to="16">
+                00072 | Nutrimat | Olivier Salad 
+              </li>
+              <li data-target="#myCarousel6" data-slide-to="17">
+                00073 | Nutrimat | Mexican Salad 
+              </li>
+            </ol>
+          </span>
+            <hr />
+          </div>
+          </div>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner relative" role="listbox">
+
+
+            <div class="controls absolute">
+              <a class="left carousel-control" href="#myCarousel6" role="button" data-slide="prev">
+                <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="106.667,53.333 0,160 213.333,160" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel6" role="button" data-slide="next">
+                <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="0,53.333 106.667,160 213.333,53.333" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+            </div>
+
+
+            <div class="item relative active">
+
+              <!-- <span class="absolute s1-1">
+                <img src="img/s1-1.png" />
+              </span> -->
+
+              <span class="absolute s1-5">
+                <img src="img/s1-5.png" />
+              </span>
+
+             
+
+              <span class="absolute s1-7">
+                <img src="img/s1-7.png" />
+              </span>
+              <span class="absolute s1-4">
+                <img src="img/salads/sa6.png" />
+                
+              </span>
+              <div class="food-img food-img-0 relative">
+
+                <span class="absolute s1-2">
+                  <img src="img/salads/sa4.png" />
+                  <p>Cucumber</p>
+                </span>
+                <span class="absolute s1-3">
+                  <img src="img/salads/sa5.png" />
+                  <p>Mushrooms</p>
+                </span>
+
+
+                <img src="img/salads/salads.png" class="main-img" alt="Chania" width="460" height="345" />
+                <img src="img/meni-responsive.png" class="main-img mobile-visible" />
+              </div>
+              <div class="carousel-caption">
+                <p style="position: relative; top: 20px;">
+                 The most different assortment of salad meals, composed of 
+                 the most quality and fresh vegetables, fruit, meat, fish,
+                 taking into account the first use of domestic products.
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/salads/00057.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Chef's Salad</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Baby Spinach | Cucumber | Bacon | Mushrooms | Turkey | 
+                  Cherry Tomatoes | Peppercorn Dressing
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/salads/00058.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Caesar Salad with Baby Spynach</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Baby Spinach | Grilled Chicken | Cherry Tomatoes |
+                  Parmesan | Croutons | Creamy Caesar Dressing
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/salads/00059.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Dominican Salad</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Baby Spinach | Sweet Corn | Cheddar Cheese | Avocado |
+                  Cherry Tomatoes | Onion | Lemon Dressing
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/salads/00060.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Falafel Salad</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Baby Spinach | Falafel | Chickpeas | Cucumber |
+                  Cherry Tomatoes | Spring Onion | Spicy Tahini and Lemon Dressing
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/salads/00061.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Sombero Salad</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Baby Spinach | Red Kidney Beans | Sweet Corn | Dried Onion |
+                  Avocado | Spring Onion | Avocado Dressing
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/salads/00062.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Spring Salad</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Iceberg Lettuce | Chicken | Cucumber | Tomato | Feta Cheese |
+                  Croutons | Olive Oil and Orange Juice Dressing
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/salads/00063.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nicoise Salad</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Arugula | Cucumber | Green Beans | Black Olives | Tuna |
+                  Eggs | Cherry tomatoes | Olive Oil and Mustard Dressing
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/salads/00064.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Tuna Caesar Salad</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Iceberg Lettuce | Tuna | Cherry Tomatoes |
+                  Croutons | Vegan Caesar Dressing
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/salads/00065.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Italian Salad</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Chicken Fillet | Iceberg Lettuce | Arugula | Baby Mozzarella |
+                  Green Olives | Croutons with Pesto | Aceto Balsamico and Olive Oil Dressing
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/salads/00066.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Greek Salad</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Tomato | Cucumber | Peppers | Feta Cheese | Black Olives | Oregano |
+                  Iceberg Lettuce | Olive Oil and Lemon Juice Dressing
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/salads/00067.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Caesar Salad with Chicken</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Iceberg Lettuce | Chicken | Croutons | Cherry Tomatoes |
+                  Bacon and Parmesan | Caesar Dressing
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/salads/00068.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Apple Tuna Salad</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Tuna | Apple | Dried Cranberries | Greek Yogurt |
+                  Mayonnaise | Dill
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/salads/00069.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Lemon Chickpea Salad</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Chickpeas | Celery | Parsley | Red Cabbage | Onion | Agave | Lemon
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/salads/00070.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | French Salad</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Peas | Carrots | Potatoes | Pickles |
+                  Mayonnaise | Mustard
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/salads/00071.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Chicken Breast Salad</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Cooked Chicken | Peas | Carrots | Potatoes |
+                  Penne Pasta | Pickles | Mayonnaise
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/salads/00072.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Olivier Salad</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Potatoes | Carrots | Peas | Pickles | Ham |
+                  Mayonnaise | Mustard
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/salads/00073.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Mexican Salad</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Smoked Beef | Marinated Peppers | Red Kidney Beans | Sweet Corn | Carrots |
+                  Sweet & Sour Sauce | BBQ Sauce
+                </p>
+              </div>
+            </div>
+
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="section6">
+    <div class="bigSlides">
+      <div class="slider">
+        <br />
+        <div id="myCarousel7" 
+        class="carousel slide carousel-fade" 
+        data-wrap="true" 
+        data-ride="carousel" 
+        data-interval="false" 
+        data-touch="true">
+          <!-- Indicators -->
+          <div class="pagination relative">
+            
+            <img src="img/maindishes-sd/m2.png" class="absolute-img-bottom" />
+            <!-- <h1><span>S</span>ANDWICHES</h1>
+            <hr /> -->
+            <!-- Left and right controls -->
+            <div class="relative">
+            <div class="controls">
+              <a class="left carousel-control" href="#myCarousel7" role="button" data-slide="prev">
+                <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="106.667,53.333 0,160 213.333,160" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel7" role="button" data-slide="next">
+                <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="0,53.333 106.667,160 213.333,53.333" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+            </div>
+            <span class="relative sandwich-wrapper-mobile">
+            <h1 class="small-visible sandwiches-click">SANDWICHES <i class="plus">+</i><i class="minus">-</i></h1>
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel7" data-slide-to="0" class="active">
+                <h1>MAIN DISHES AND <BR> SIDE DISHES<h1>
+                <hr />
+              </li>
+              
+              <li data-target="#myCarousel7" data-slide-to="1">
+                00074 | Nutrimat | Baked Beans Side Dish
+              </li>
+              <li data-target="#myCarousel7" data-slide-to="2">
+                00075 | Nutrimat | Steamed Peas Side Dish
+              </li>
+              <li data-target="#myCarousel7" data-slide-to="3">
+                00076 | Nutrimat | Green Beans Side Dish
+              </li>
+              <li data-target="#myCarousel7" data-slide-to="4">
+                00077 | Nutrimat | Viennese Cabbage Side Dish
+              </li>
+              <li data-target="#myCarousel7" data-slide-to="5">
+                00078 | Nutrimat | Sauteed Carrots Side Dish
+              </li>
+              <li data-target="#myCarousel7" data-slide-to="6">
+                00079 | Nutrimat | Muckalica
+              </li>
+              <li data-target="#myCarousel7" data-slide-to="7">
+                00080 | Nutrimat | Goulash
+              </li>
+              <li data-target="#myCarousel7" data-slide-to="8">
+                00081 | Nutrimat | Curry Chicken
+              </li>
+              <li data-target="#myCarousel7" data-slide-to="9">
+                00082 | Nutrimat | Meatballs in Tomato Sauce
+              </li>
+              <li data-target="#myCarousel7" data-slide-to="10">
+                00083 | Nutrimat | Stuffed Bell Peppers
+              </li>
+              <li data-target="#myCarousel7" data-slide-to="11">
+                00084 | Nutrimat | Chilli Con Carne with Rice
+              </li>
+              <li data-target="#myCarousel7" data-slide-to="12">
+                00085 | Nutrimat | Spaghetti Bolognese
+              </li>
+              <li data-target="#myCarousel7" data-slide-to="13">
+                00086 | Nutrimat | Chicken Tagine with Rice
+              </li>
+              <li data-target="#myCarousel7" data-slide-to="14">
+                00087 | Nutrimat | Chinese Chicken
+              </li>
+              <li data-target="#myCarousel7" data-slide-to="15">
+                00088 | Nutrimat | Sesame Chicken Strips
+              </li>
+              <li data-target="#myCarousel7" data-slide-to="16">
+                00089 | Nutrimat | Wiener Schnitzel
+              </li>
+              <li data-target="#myCarousel7" data-slide-to="17">
+                00090 | Nutrimat | Chicken Drumstick and Thigh
+              </li>
+              <li data-target="#myCarousel7" data-slide-to="18">
+                00091 | Nutrimat | Chevapi
+              </li>
+              <li data-target="#myCarousel7" data-slide-to="19">
+                00092 | Nutrimat | Grilled Sausage
+              </li>
+              <li data-target="#myCarousel7" data-slide-to="20">
+                00093 | Nutrimat | Djuvech without Meat
+              </li>
+              <li data-target="#myCarousel7" data-slide-to="21">
+                00094 | Nutrimat | Cheese-Filled Ravioli
+              </li>
+              <li data-target="#myCarousel7" data-slide-to="22">
+                00095 | Nutrimat | Breaded Cauliflower
+              </li>
+              <li data-target="#myCarousel7" data-slide-to="23">
+                00096 | Nutrimat | Breaded Zucchini
+              </li>
+              <li data-target="#myCarousel7" data-slide-to="24">
+                00097 | Nutrimat | Risotto with Ratatouille
+              </li>
+              <li data-target="#myCarousel7" data-slide-to="25">
+                00098 | Nutrimat | Lasagna Bolognese
+              </li>
+              <li data-target="#myCarousel7" data-slide-to="26">
+                00099 | Nutrimat | Spanish Rice with Chicken
+              </li>
+              <li data-target="#myCarousel7" data-slide-to="27">
+                00100 | Nutrimat | Sichuan Chicken
+              </li>
+              <li data-target="#myCarousel7" data-slide-to="28">
+                00101 | Nutrimat | Zucchini Moussaka
+              </li>
+              <li data-target="#myCarousel7" data-slide-to="29">
+                00102 | Nutrimat | Carrot Potage
+              </li>
+              <li data-target="#myCarousel7" data-slide-to="30">
+                00103 | Nutrimat | Celery and Carrot Potage
+              </li>
+              <li data-target="#myCarousel7" data-slide-to="31">
+                00104 | Nutrimat | Spinach and Garlic Potage
+              </li>
+              
+            </ol>
+          </span>
+            <hr />
+          </div>
+          </div>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner relative" role="listbox">
+
+
+            <div class="controls absolute">
+              <a class="left carousel-control" href="#myCarousel7" role="button" data-slide="prev">
+                <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="106.667,53.333 0,160 213.333,160" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel7" role="button" data-slide="next">
+                <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="0,53.333 106.667,160 213.333,53.333" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+            </div>
+
+
+            <div class="item relative active">
+
+              <!-- <span class="absolute s1-1">
+                <img src="img/s1-1.png" />
+              </span> -->
+
+              <span class="absolute s1-5">
+                <img src="img/maindishes-sd/m1.png" />
+                <p>Pene</p>
+              </span>
+
+              <span class="absolute s1-6">
+                <img src="img/s1-6.png" />
+              </span>
+
+              
+              <span class="absolute s1-4">
+                <img src="img/maindishes-sd/m5.png" />
+                <p>Chicken</p>
+              </span>
+              <div class="food-img food-img-0 relative">
+
+                <span class="absolute s1-2">
+                  <img src="img/maindishes-sd/m3.png" />
+                  <p>Rice</p>
+                </span>
+                <span class="absolute s1-3">
+                  <img src="img/maindishes-sd/m4.png" />
+                  <p>Curcuma</p>
+                </span>
+
+
+                <img src="img/maindishes-sd/m6.png" class="main-img" alt="Chania" width="460" height="345" />
+                <img src="img/meni-responsive.png" class="main-img mobile-visible" />
+              </div>
+              <div class="carousel-caption">
+                <p style="position: relative; top: 20px;">
+                Our suggestions of domestic specialties and side dishes,
+                prepared according to the traditional recipes. Dishes and side
+                dishes prepared from the highest quality ingredients on our market. 
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-sd/00074.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Baked Beans Side Dish</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Baked beans with onion and sweet chilly pepper powder
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-sd/00075.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Steamed Peas Side Dish</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Sautéed peas with dill
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-sd/00076.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Green Beans Side Dish</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Sautéed green beans
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-sd/00077.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Viennese Cabbage Side Dish</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Sotirani slatki kupus ribanac sa lukom i začinima
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-sd/00078.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Sauteed Carrots Side Dish</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Rustic style sautéed carrots
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-sd/00079.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Muckalica</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Traditional Serbian specialty made of pork and vegetables
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-sd/00080.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Goulash</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Beef in gravy with onions and spices
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-sd/00081.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Curry Chicken</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Chicken in a curry sauce
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-sd/00082.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Meatballs in Tomato Sauce</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Beef and pork meat balls cooked in a rustic tomato sauce
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-sd/00083.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Stuffed Bell Peppers</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Bell peppers stuffed with minced pork and rice, broiled
+                  in tomato sauce
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-sd/00084.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Chilli Con Carne with Rice</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Spicy specialty made of minced pork and vegetables in sweet &
+                  sour sauce
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-sd/00085.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Spaghetti Bolognese</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Spaghetti in an Italian sauce made of minced beef, 
+                  tomato sauce and Mediterranean spices
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-sd/00086.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Chicken Tagine with Rice</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Twith chicken, vegetables and
+                  dry fruit in a sauce, garnished with Basmati rice
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-sd/00087.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Chinese Chicken</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Chicken strips and vegetables with rice noodles in soya sauce
+                  and sweet & sour sauce
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-sd/00088.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Sesame Chicken Strips</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Breaded chicken strips with
+                  sesame seeds
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-sd/00089.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Wiener Schnitzel</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Breaded pork schnitzel - coated with egg and
+                  breadcrumbs, Viennese style
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-sd/00090.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Chicken Drumstick and Thigh</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Grilled chicken drumstick and thigh
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-sd/00091.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Chevapi</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Fingers of minced beef, cooked on a charcoal grill
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-sd/00092.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Grilled Sausage</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Chicken sausage cooked on a charcoal grill
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-sd/00093.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Cheese-Filled Ravioli</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Tomatoes, peppers and onion in a thick rustic-style sauce
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-sd/00094.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible"> Nutrimat | Baked Beans Side Dish</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Traditional Italian-style pasta filled with cheese and cooked
+                  with a creamy sauce and aromatic herbs
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-sd/00095.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Breaded Cauliflower</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Fried cauliflower pieces coated with egg and breadcrumbs
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-sd/00096.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Breaded Zucchini</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Fried zucchini rounds coated with egg and breadcrumbs
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-sd/00097.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Risotto with Ratatouille</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Selected vegetables with Italian stile tomatoes, 
+                  servedwith rice
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-sd/00098.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Lasagna Bolognese</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  A traditional Italian specialty of
+                  pasta layers, ground pork and
+                  beef, baked with tomato sauce
+                  and white sauce
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-sd/00099.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Spanish Rice with Chicken</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Rice, vegetables and chicken
+                  cooked in a chicken broth with
+                  Mediterranean herbs and spicy sausage
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-sd/00100.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Sichuan Chicken</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Chicken marinated in Asian
+                  sauces, served with Basmati rice
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-sd/00101.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Zucchini Moussaka</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Greek specialty of minced pork
+                  and zucchini, baked with milk
+                  and eggs
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-sd/00102.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Carrot Potage</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Creamy soup with carrots
+                
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-sd/00103.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Celery and Carrot Potage</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Creamy soup with celery and carrots
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-sd/00104.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Spinach and Garlic Potage</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Creamy soup with spinach and garlic
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="section7">
+    <div class="bigSlides">
+      <div class="slider">
+        <br />
+        <div id="myCarousel8" 
+        class="carousel slide carousel-fade" 
+        data-wrap="true" 
+        data-ride="carousel" 
+        data-interval="false" 
+        data-touch="true">
+          <!-- Indicators -->
+          <div class="pagination relative">
+            <img src="img/maindishes-ws/md 1.png" class="absolute-img-top" />
+            <img src="img/maindishes-ws/md8.png" class="absolute-img-bottom" />
+            <!-- <h1><span>S</span>ANDWICHES</h1>
+            <hr /> -->
+            <!-- Left and right controls -->
+            <div class="relative">
+            <div class="controls">
+              <a class="left carousel-control" href="#myCarousel8" role="button" data-slide="prev">
+                <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="106.667,53.333 0,160 213.333,160" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel8" role="button" data-slide="next">
+                <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="0,53.333 106.667,160 213.333,53.333" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+            </div>
+            <span class="relative sandwich-wrapper-mobile">
+            <h1 class="small-visible sandwiches-click">SANDWICHES <i class="plus">+</i><i class="minus">-</i></h1>
+            <ol class="carousel-indicators">
+              
+              <li data-target="#myCarousel8" data-slide-to="0" class="active">
+                <h1>MAIN DISHES <br> WITH SIDES</h1>
+                
+                <hr />
+              </li>
+              
+              <li data-target="#myCarousel8" data-slide-to="1">
+                00105 | Nutrimat | Meatballs in Tomatmo Sauce
+              </li>
+              <li data-target="#myCarousel8" data-slide-to="2">
+                00106 | Nutrimat | Spaghetti Bolognese
+              </li>
+              <li data-target="#myCarousel8" data-slide-to="3">
+                00107 | Nutrimat | Chicken in Four Cheese Sauce
+              </li>
+              <li data-target="#myCarousel8" data-slide-to="4">
+                00108 | Nutrimat | Pea and Beef Stew 
+              </li>
+              <li data-target="#myCarousel8" data-slide-to="5">
+                00109 | Nutrimat | Cheese Filled Ravioli in Cream
+              </li>
+              <li data-target="#myCarousel8" data-slide-to="6">
+                00110 | Nutrimat | Hunter's Goulash
+              </li>
+              <li data-target="#myCarousel8" data-slide-to="7">
+                00111 | Nutrimat | Lasagna Bolognese
+              </li>
+              <li data-target="#myCarousel8" data-slide-to="8">
+                00112 | Nutrimat | Sesame Chicken
+              </li>
+              <li data-target="#myCarousel8" data-slide-to="9">
+                00113 | Nutrimat | Wiener Schnitzel with Fries 
+              </li>
+              <li data-target="#myCarousel8" data-slide-to="10">
+                00114 | Nutrimat | Pariser Schnitzel
+              </li>
+              <li data-target="#myCarousel8" data-slide-to="11">
+                00115 | Nutrimat | Fried Blue Hake
+              </li>
+              <li data-target="#myCarousel8" data-slide-to="12">
+                00116 | Nutrimat | Roast with Mashed Potatoes 
+              </li>
+              <li data-target="#myCarousel8" data-slide-to="13">
+                00117 | Nutrimat | Schnitzel in Gravy 
+              </li>
+              <li data-target="#myCarousel8" data-slide-to="14">
+                00118 | Nutrimat | Hunter's Schnitzel with Risotto 
+              </li>
+              <li data-target="#myCarousel8" data-slide-to="15">
+                00119 | Nutrimat | Grilled Drumstick and tigh
+              </li>
+              <li data-target="#myCarousel8" data-slide-to="16">
+                00120 | Nutrimat | Grilled Sausage with Satarash
+              </li>
+              <li data-target="#myCarousel8" data-slide-to="17">
+                00121 | Nutrimat | Gourmet Pljeskavica 
+              </li>
+              <li data-target="#myCarousel8" data-slide-to="18">
+                00122 | Nutrimat | Fried Squid
+              </li>
+              <li data-target="#myCarousel8" data-slide-to="19">
+                00123 | Nutrimat | Beef Chevapi with Fries 
+              </li>
+              <li data-target="#myCarousel8" data-slide-to="20">
+                00124 | Nutrimat | Fish Fingers 
+              </li>
+              <li data-target="#myCarousel8" data-slide-to="21">
+                00125 | Nutrimat | Minced Meat Steak 
+              </li>
+              <li data-target="#myCarousel8" data-slide-to="22">
+                00126 | Nutrimat | Meat Fritters 
+              </li>
+              <li data-target="#myCarousel8" data-slide-to="23">
+                00127 | Nutrimat | Grilled Chicken Sausage
+              </li>
+              <li data-target="#myCarousel8" data-slide-to="24">
+                00128 | Nutrimat | Breaded Cheese with Sausage
+              </li>
+            </ol>
+          </span>
+            <hr />
+          </div>
+          </div>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner relative" role="listbox">
+
+
+            <div class="controls absolute">
+              <a class="left carousel-control" href="#myCarousel8" role="button" data-slide="prev">
+                <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="106.667,53.333 0,160 213.333,160" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel8" role="button" data-slide="next">
+                <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="0,53.333 106.667,160 213.333,53.333" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+            </div>
+
+
+            <div class="item relative active">
+
+              <!-- <span class="absolute s1-1">
+                <img src="img/s1-1.png" />
+              </span> -->
+
+              <span class="absolute s1-5">
+                <img src="img/maindishes-ws/md2.png" />
+                <p>Prosciutto</p>
+              </span>
+
+              <span class="absolute s1-6">
+                <img src="img/s1-6.png" />
+              </span>
+
+              <span class="absolute s1-7">
+                <img src="img/maindishes-ws/md7.png" />
+                <p>Spinach</p>
+              </span>
+              <span class="absolute s1-4">
+                <img src="img/maindishes-ws/md5.png" />
+                <p>Mushrooms</p>
+              </span>
+              <div class="food-img food-img-0 relative">
+
+                <span class="absolute s1-2">
+                  <img src="img/maindishes-ws/md3.png" />
+                  
+                </span>
+                <span class="absolute s1-3">
+                  <img src="img/maindishes-ws/md4.png" />
+                  <p>Sweetcorn</p>
+                </span>
+
+
+                <img src="img/maindishes-ws/md9.png" class="main-img" alt="Chania" width="460" height="345" />
+                <img src="img/meni-responsive.png" class="main-img mobile-visible" />
+              </div>
+              <div class="carousel-caption">
+                <p style="position: relative; top: 20px;">
+                  
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-ws/00105.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Meatballs in Tomatmo Sauce</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Beef and pork meat balls
+                  cooked in a rustic tomato
+                  sauce, served with mashed
+                  potato and sauteed peas
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-ws/00106.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Spaghetti Bolognese</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Spaghetti in an Italian sauce
+                  made of minced beef, tomato
+                  sauce and Mediterranean
+                  spices
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-ws/00107.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Chicken in Four Cheese Sauce</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Grilled chicken with creamy
+                  four cheese sauce, served with
+                  sauteed rice and vegetables
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-ws/00108.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Pea and Beef Stew</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Baby peas cooked with beef in
+                  a rustic style, served with
+                  mashed potatoes and sauteed
+                  carrots
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-ws/00109.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Cheese Filled Ravioli in Cream</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Traditional Italian-style pasta
+                  filled with cheese and cooked
+                  with a creamy sauce
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-ws/00110.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Hunter's Goulash</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Beef in gravy with onions,
+                  champignon mushrooms and
+                  spices, served with potato
+                  gnocchi and sauteed broccoli
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-ws/00111.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Lasagna Bolognese</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  A traditional Italian specialty of
+                  pasta layers, ground pork and
+                  beef, baked with tomato sauce
+                  and white sauce
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-ws/00112.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Sesame Chicken</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Breaded chicken strips with
+                  sesame seeds , served with
+                  selected grilled vegetables,
+                  pesto & mayonnaise sauce and
+                  lemon
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-ws/00113.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Wiener Schnitzel with Fries</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Breaded pork chop - coated
+                with egg and breadcrumbs in a
+                Viennese style, served with
+                sauteed cauliflower and green
+                beans, mayonnaise and pickle
+                sauce and lemon
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-ws/00114.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Pariser Schnitzel</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Breaded pork schnitzel, served
+                  with grilled champignon
+                  mushrooms and green beans,
+                  mayonnaise and pickle sauce
+                  and lemon
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-ws/00115.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Fried Blue Hake</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Baked meatloaf with boiled
+                    eggs, served with mashed
+                    potatoes and sauteed spinach
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-ws/00116.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Roast with Mashed Potatoes</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Zapeceni rolat od mlevenog
+                  mesa sa kuvanim
+                  jajima, serviran sa krompir
+                  pireom i sotiranim spanacem
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-ws/00117.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Schnitzel in Gravy</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Pork schnitzel in gravy served
+                  with French fries and sauteed
+                  baby peas
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-ws/00118.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Hunter's Schnitzel with Risotto</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Svinjska shnicla u lovachkom
+                  sosu od pechuraka i prshute,
+                  servirana sa pirinchem i
+                  shampinjonima i sotiranim
+                  kukuruzom
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-ws/00119.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Beef Chevapi with Fries</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Grilled drumstick and thigh
+                  served with fried aromatic
+                  potatoes and sauteed carrots
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-ws/00120.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Fish Fingers</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Chicken sausage grilled over
+                  charcoal, served with sauteed
+                  tomato, onion and peppers -
+                  Satarash
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-ws/00121.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Minced Meat Steak</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Spicy meat patty with
+                  prosciutto and cheese cooked
+                  over charcoal, served with
+                  baked potatoes and fresh
+                  onion
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-ws/00122.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Meat Fritters</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Crispy fried squid rings
+                  garnished with potato and
+                  spinach, served with a
+                  mayonnaise and pickle sauce
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-ws/00123.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Grilled Chicken Sausage</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Fingers of minced beef cooked
+                  on a charcoal grill, served with
+                  French fries
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-ws/00124.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Fish Fingers</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Breaded fish fingers and
+                    potato salad, served with a
+                    mayonnaise and pickle sauce
+                    and lemon
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-ws/00125.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Minced Meat Steak</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  A minced meat, onion and
+                  breadcrumb schnitzel served
+                  with mashed potatoes and
+                  sauteed spinach
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-ws/00126.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Meat Fritters</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Spicy meat balls with
+                  prosciutto and cheese cooked
+                  over charcoal and served with
+                  aromatic fried baby potatoes
+                  and sauteed carrots
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-ws/00127.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Grilled Chicken Sausage</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Chicken sausage cooked over
+                  charcoal served with baked
+                  potato and onions
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/maindishes-ws/00128.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Breaded Cheese with Sausage</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Breaded yellow cheese served
+                  with grilled chicken sausages
+                  and a mayonnaise and pickle
+                  sauce
+                </p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="section8">
+    <div class="bigSlides">
+      <div class="slider">
+        <br />
+        <div id="myCarousel9" 
+        class="carousel slide carousel-fade" 
+        data-wrap="true" 
+        data-ride="carousel" 
+        data-interval="false" 
+        data-touch="true">
+          <!-- Indicators -->
+          <div class="pagination relative">
+            <img src="img/healthy/h1.png" class="absolute-img-top" />
+            <img src="img/healthy/h5.png" class="absolute-img-bottom" />
+            <!-- <h1><span>S</span>ANDWICHES</h1>
+            <hr /> -->
+            <!-- Left and right controls -->
+            <div class="relative">
+            <div class="controls">
+              <a class="left carousel-control" href="#myCarousel9" role="button" data-slide="prev">
+                <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="106.667,53.333 0,160 213.333,160" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel9" role="button" data-slide="next">
+                <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="0,53.333 106.667,160 213.333,53.333" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+            </div>
+            <span class="relative sandwich-wrapper-mobile">
+            <h1 class="small-visible sandwiches-click">SANDWICHES <i class="plus">+</i><i class="minus">-</i></h1>
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel9" data-slide-to="0" class="active">
+                <h1>HEALTHY BOWLS</h1>
+                <hr />
+              </li>
+              
+              <li data-target="#myCarousel9" data-slide-to="1">
+                00129 | Green Healthy Bowl 
+              </li>
+              <li data-target="#myCarousel9" data-slide-to="2">
+                00130 | Granola Healthy Bowl 
+              </li>
+              <li data-target="#myCarousel9" data-slide-to="3">
+                00131 | Energy Healthy Bowl 
+              </li>
+              <li data-target="#myCarousel9" data-slide-to="4">
+                00132 | Tropical Healthy Bowl 
+              </li>
+            </ol>
+          </span>
+            <hr />
+          </div>
+          </div>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner relative" role="listbox">
+
+
+            <div class="controls absolute">
+              <a class="left carousel-control" href="#myCarousel9" role="button" data-slide="prev">
+                <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="106.667,53.333 0,160 213.333,160" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel9" role="button" data-slide="next">
+                <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="0,53.333 106.667,160 213.333,53.333" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+            </div>
+
+
+            <div class="item relative active">
+
+              <!-- <span class="absolute s1-1">
+                <img src="img/s1-1.png" />
+              </span> -->
+
+              <span class="absolute s1-5">
+                <img src="img/healthy/h2.png" />
+                <p>Toasted Almond</p>
+              </span>
+
+             
+              
+              <div class="food-img food-img-0 relative">
+
+                <span class="absolute s1-2">
+                  <p>Strawberry</p>
+                  <img src="img/healthy/h3.png" />
+                  
+                </span>
+                <span class="absolute s1-3">
+                  <img src="img/healthy/h4.png" />
+                  <p>Pineapple</p>
+                </span>
+
+
+                <img src="img/healthy/h6.png" class="main-img" alt="Chania" width="460" height="345" />
+                <img src="img/meni-responsive.png" class="main-img mobile-visible" />
+              </div>
+              <div class="carousel-caption">
+                <p style="position: relative; top: 20px;">
+                A great combination of a healthy meal or snack 
+                that will complete your day.
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/healthy/00129.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Green Healthy Bowl</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Banana |
+                  Baby Spinach |
+                  Avocado |
+                  Apple Juice |
+                  Granola |
+                  Strawberries |
+                  Chia Seeds |
+                  Agave
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/healthy/00130.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Granola Healthy Bowl</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Granola |
+                  Banana |
+                  Strawberries |
+                  Blueberries |
+                  Agave |
+                  Milk |
+                  Cashews
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/healthy/00131.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Energy Healthy Bowl</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Ppeanut butter |
+                  Dates |
+                  Almond Milk |
+                  Banana |
+                  Seed Mix |
+                  Strawberries |
+                  Almonds
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/healthy/00132.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Tropical Healthy Bowl</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Pineapple |
+                  Avocado |
+                  Coconut Butter |
+                  Banana |
+                  Kiwi |
+                  Strawberry |
+                  Seed Mix
+                </p>
+              </div>
+            </div>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="section9">
+    <div class="bigSlides">
+      <div class="slider">
+        <br />
+        <div id="myCarousel10" 
+        class="carousel slide carousel-fade" 
+        data-wrap="true" 
+        data-ride="carousel" 
+        data-interval="false" 
+        data-touch="true">
+          <!-- Indicators -->
+          <div class="pagination relative">
+            <img src="img/sweets/sw1.png" class="absolute-img-top" />
+            <img src="img/sweets/sw5.png" class="absolute-img-bottom" />
+            <!-- <h1><span>S</span>ANDWICHES</h1>
+            <hr /> -->
+            <!-- Left and right controls -->
+            <div class="relative">
+            <div class="controls">
+              <a class="left carousel-control" href="#myCarousel10" role="button" data-slide="prev">
+                <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="106.667,53.333 0,160 213.333,160" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel10" role="button" data-slide="next">
+                <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="0,53.333 106.667,160 213.333,53.333" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+            </div>
+            <span class="relative sandwich-wrapper-mobile">
+            <h1 class="small-visible sandwiches-click">SANDWICHES <i class="plus">+</i><i class="minus">-</i></h1>
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel10" data-slide-to="0" class="active">
+                <h1>SWEETS AND DESSERTS</h1>
+                <hr />
+              </li>
+              
+              <li data-target="#myCarousel10" data-slide-to="1">
+                00133 | Nutrimat | Walnut Cookies
+              </li>
+              <li data-target="#myCarousel10" data-slide-to="2">
+                00134 | Nutrimat | Chocolate bread 
+              </li>
+              <li data-target="#myCarousel10" data-slide-to="3">
+                00135 | Nutrimat | Bread with Candied Cranberry
+              </li>
+              <li data-target="#myCarousel10" data-slide-to="4">
+                00136 | Nutrimat | Chupava Kata - Walnut Pie
+              </li>
+              <li data-target="#myCarousel10" data-slide-to="5">
+                00137 | Nutrimat | Cake with Berriers
+              </li>
+              <li data-target="#myCarousel10" data-slide-to="6">
+                00138 | Nutrimat | Marble Cake
+              </li>
+            </ol>
+          </span>
+            <hr />
+          </div>
+          </div>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner relative" role="listbox">
+
+
+            <div class="controls absolute">
+              <a class="left carousel-control" href="#myCarousel10" role="button" data-slide="prev">
+                <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="106.667,53.333 0,160 213.333,160" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel10" role="button" data-slide="next">
+                <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="0,53.333 106.667,160 213.333,53.333" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+            </div>
+
+
+            <div class="item relative active">
+
+              <!-- <span class="absolute s1-1">
+                <img src="img/s1-1.png" />
+              </span> -->
+
+              
+
+              <span class="absolute s1-6">
+                <img src="img/sweets/sw3.png" />
+              </span>
+
+              <span class="absolute s1-7">
+                <p>Candied Orange</p>
+                <img src="img/sweets/sw6.png" />
+              </span>
+              <span class="absolute s1-4">
+                <img src="img/sweets/sw7.png" />
+                
+              </span>
+              <div class="food-img food-img-0 relative">
+
+                <span class="absolute s1-2">
+                  <img src="img/sweets/sw2.png" />
+                  <p>Cranberries</p>
+                </span>
+                <span class="absolute s1-3">
+                  <p>Chocolate</p>
+                  <img src="img/sweets/sw4.png" />
+                  
+                </span>
+
+
+                <img src="img/sweets/sw8.png" class="main-img" alt="Chania" width="460" height="345" />
+                <img src="img/meni-responsive.png" class="main-img mobile-visible" />
+              </div>
+              <div class="carousel-caption">
+                <p style="position: relative; top: 20px;">
+                  Sweet program consisted of proven recipes
+                  from our pastry shop.
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/sweets/00133.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Walnut Cookies</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Traditional walnuts cookies 
+                 
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/sweets/00134.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Chocolate bread</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Sweet chocolate cake with
+                  pieces of candied orange.
+                  The ingredients van be mixed
+                  can be changed as you wish
+                 
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/sweets/00135.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Bread with Candied Cranberry</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Sweet vanilla cake with
+                  candied cranberries.
+                  The ingredients van be mixed
+                  can be changed as you wish
+                 
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/sweets/00136.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Chupava Kata - Walnut Pie</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Crispy dough cake with
+                  walnuts.
+                  The ingredients van be mixed
+                  can be changed as you wish
+                 
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/sweets/00137.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Cake with Berriers</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Slatki kolach sa svezim
+                  bobichastim vocem.
+                  Sastav se moze izmeniti
+                  po zelji 
+                 
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/sweets/00138.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Nutrimat | Marble Cake</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Sinfonija slatkog
+                  chokoladnog i vanila ukusa.
+                  Sastav se moze izmeniti
+                  po zelji
+                </p>
+              </div>
+            </div>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="section10">
+    <div class="bigSlides">
+      <div class="slider">
+        <br />
+        <div id="myCarousel11" 
+        class="carousel slide carousel-fade" 
+        data-wrap="true" 
+        data-ride="carousel" 
+        data-interval="false" 
+        data-touch="true">
+          <!-- Indicators -->
+          <div class="pagination relative">
+            <img src="img/smoothies/sm1.png" class="absolute-img-top" />
+            <img src="img/smoothies/sm7.png" class="absolute-img-bottom" />
+            <!-- <h1><span>S</span>ANDWICHES</h1>
+            <hr /> -->
+            <!-- Left and right controls -->
+            <div class="relative">
+            <div class="controls">
+              <a class="left carousel-control" href="#myCarousel11" role="button" data-slide="prev">
+                <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="106.667,53.333 0,160 213.333,160" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel11" role="button" data-slide="next">
+                <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="0,53.333 106.667,160 213.333,53.333" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+            </div>
+            <span class="relative sandwich-wrapper-mobile">
+            <h1 class="small-visible sandwiches-click">SANDWICHES <i class="plus">+</i><i class="minus">-</i></h1>
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel11" data-slide-to="0" class="active">
+                <h1>SMOOTHIES</h1>
+                <hr />
+              </li>
+              
+              <li data-target="#myCarousel11" data-slide-to="1">
+                00139 | Super Green 
+              </li>
+              <li data-target="#myCarousel11" data-slide-to="2">
+                00140 | Berries  
+              </li>
+              <li data-target="#myCarousel11" data-slide-to="3">
+                00141 | Skinny 
+              </li>
+              <li data-target="#myCarousel11" data-slide-to="4">
+                00142 | For a Better Mood
+              </li>
+              <li data-target="#myCarousel11" data-slide-to="5">
+                00143 | Beetroot 
+              </li>
+            </ol>
+          </span>
+            <hr />
+          </div>
+          </div>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner relative" role="listbox">
+
+
+            <div class="controls absolute">
+              <a class="left carousel-control" href="#myCarousel11" role="button" data-slide="prev">
+                <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="106.667,53.333 0,160 213.333,160" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel11" role="button" data-slide="next">
+                <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="0,53.333 106.667,160 213.333,53.333" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+            </div>
+
+
+            <div class="item relative active">
+
+              <!-- <span class="absolute s1-1">
+                <img src="img/s1-1.png" />
+              </span> -->
+
+              <span class="absolute s1-5">
+                <img src="img/smoothies/sm2.png" />
+                <p>Blueberry</p>
+              </span>
+
+             
+
+              <span class="absolute s1-7">
+                <img src="img/smoothies/sm6.png" />
+              </span>
+              <span class="absolute s1-4">
+                <p>Smoked Salmon</p>
+                <img src="img/smoothies/sm5.png" />
+                
+              </span>
+              <div class="food-img food-img-0 relative">
+
+                <span class="absolute s1-2">
+                  <img src="img/smoothies/sm3.png" />
+                  <p>Dates</p>
+                </span>
+                <span class="absolute s1-3">
+                  <img src="img/smoothies/sm4.png" />
+                  <p>Peanut Butter</p>
+                </span>
+
+
+                <img src="img/smoothies/sm8.png" class="main-img" alt="Chania" width="460" height="345" />
+                <img src="img/meni-responsive.png" class="main-img mobile-visible" />
+              </div>
+              <div class="carousel-caption">
+                <p style="position: relative; top: 20px;">
+                  
+                </p>
+              </div>
+            </div>
+
+            <div class="item relative">
+              <img class="s2-0" src="img/smoothies/00139.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Super Green</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Spinach |
+                  Avocado |
+                  Strawberry |
+                  Almond Milk |
+                  Almond Butter |
+                  Dates |
+                  Chocolate Topping 
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/smoothies/00140.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Berries</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Healthy Seed Mix |
+                  Blueberry |
+                  Strawberry |
+                  Raspberry |
+                  Banana |
+                  Cashew Milk |
+                  Vanilla Topping 
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/smoothies/00141.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Skinny</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Banana |
+                  Strawberry |
+                  Fresh Apple Juice
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/smoothies/00142.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">For a Better Mood</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Banana |
+                  Peanut Butter |
+                  Almond Milk |
+                  Chocolate Granola |
+                  Chocolate Topping
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/smoothies/00143.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Beetroot</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Peanut Butter |
+                  Strawberry |
+                  Agave |
+                  Greek Yogurt |
+                  Freshly Squeezed Beetroot Juice |
+                  Freshly Squeezed Orange Juice 
+                </p>
+              </div>
+            </div>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="section11">
+    <div class="bigSlides">
+      <div class="slider">
+        <br />
+        <div id="myCarousel12" 
+        class="carousel slide carousel-fade" 
+        data-wrap="true" 
+        data-ride="carousel" 
+        data-interval="false" 
+        data-touch="true">
+          <!-- Indicators -->
+          <div class="pagination relative">
+            <img src="img/freshly/f1.png" class="absolute-img-top" />
+            <img src="img/pagination-bottom.png" class="absolute-img-bottom" />
+            <!-- <h1><span>S</span>ANDWICHES</h1>
+            <hr /> -->
+            <!-- Left and right controls -->
+            <div class="relative">
+            <div class="controls">
+              <a class="left carousel-control" href="#myCarousel12" role="button" data-slide="prev">
+                <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="106.667,53.333 0,160 213.333,160" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel12" role="button" data-slide="next">
+                <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="0,53.333 106.667,160 213.333,53.333" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+            </div>
+            <span class="relative sandwich-wrapper-mobile">
+            <h1 class="small-visible sandwiches-click">SANDWICHES <i class="plus">+</i><i class="minus">-</i></h1>
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel12" data-slide-to="0" class="active">
+                <h1>FRESHLY SQUEZZED<BR>JUICES</h1>
+                <hr />
+              </li>
+              
+              <li data-target="#myCarousel12" data-slide-to="1">
+                00144 | Spinach
+              </li>
+              <li data-target="#myCarousel12" data-slide-to="2">
+                00145 | Beetroot
+              </li>
+              <li data-target="#myCarousel12" data-slide-to="3">
+                00146 | Sunny 
+              </li>
+            </ol>
+          </span>
+            <hr />
+          </div>
+          </div>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner relative" role="listbox">
+
+
+            <div class="controls absolute">
+              <a class="left carousel-control" href="#myCarousel12" role="button" data-slide="prev">
+                <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="106.667,53.333 0,160 213.333,160" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel12" role="button" data-slide="next">
+                <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+                <span class="sr-only"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 213.333 213.333"
+                    style="enable-background: new 0 0 213.333 213.333" xml:space="preserve">
+                    <g>
+                      <g>
+                        <polygon points="0,53.333 106.667,160 213.333,53.333" />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg></span>
+              </a>
+            </div>
+
+
+            <div class="item relative active">
+
+              <!-- <span class="absolute s1-1">
+                <img src="img/s1-1.png" />
+              </span> -->
+
+              
+
+              <span class="absolute s1-6">
+                <img src="img/s1-6.png" />
+              </span>
+
+              <span class="absolute s1-7">
+                <img src="img/freshly/f5.png" />
+              </span>
+              <span class="absolute s1-4">
+                <p>Pineapple</p>
+                <img src="img/freshly/f4.png" />
+                
+              </span>
+              <div class="food-img food-img-0 relative">
+
+                <span class="absolute s1-2">
+                  <img src="img/freshly/f2.png" />
+                  <p>Beetroot</p>
+                </span>
+                <span class="absolute s1-3">
+                  <img src="img/freshly/f3.png" />
+                  
+                </span>
+
+
+                <img src="img/freshly/f7.png" class="main-img" alt="Chania" width="460" height="345" />
+                <img src="img/meni-responsive.png" class="main-img mobile-visible" />
+              </div>
+              <div class="carousel-caption">
+                <p style="position: relative; top: 20px;">
+                Refreshing drinks, rich with all necessary 
+                vitamins and nutritional ingredients for the day ahead.
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/freshly/00144.png" alt="Chania" width="460" height="345" /> 
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Spinach/h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Spinach |
+                  Pineapple |
+                  Orange |
+                  Ginger
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/freshly/00145.png" alt="Chania" width="460" height="345" />
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Beetroot</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Beetroot |
+                  Carrot |
+                  Celery |
+                  Ginger |
+                  Lime |
+                  Pear
+                </p>
+              </div>
+            </div>
+            <div class="item relative">
+              <img class="s2-0" src="img/freshly/00146.png" alt="Chania" width="460" height="345" />
+              <div class="carousel-caption ingredients">
+                <h2 class="mobile-visible">Sunny</h2>
+                <h3>Ingredients</h3>
+                <p>
+                  Turmeric |
+                  Orange |
+                  Ginger |
+                  Filtered Water |
+                  Organic Agave
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script type="text/javascript" src="vendors/scrolloverflow.js"></script>
+<script type="text/javascript" src="dist/fullpage.js"></script>
+<script type="text/javascript" src="examples.js"></script>
+
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
+        sectionsColor: ['#4A6FB1', '#939FAA', '#323539'],
+        scrollOverflow: true,
+        //autoScrolling:false,
+    });
+</script>
+
+</body>
+</html>

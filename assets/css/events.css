@@ -1,0 +1,657 @@
+.clearfix:after {
+
+  content: ".";
+
+  display: block;
+
+  font-size: 0;
+
+  line-height: 0;
+
+  height: 0;
+
+  clear: both;
+
+  visibility: hidden;
+
+}
+
+.clearfix {
+
+  display: inline-block;
+
+}
+
+* html .clearfix {
+
+  height: 1%;
+
+}
+
+.clearfix {
+
+  display: block;
+
+}
+
+
+
+body {
+
+  margin: 0;
+
+  background: #fff;
+
+  -webkit-text-size-adjust: 100%;
+
+  -moz-text-size-adjust: 100%;
+
+  padding: 10px 2%;
+
+  font-family: "Nunito Sans", sans-serif;
+
+  color: #000;
+
+}
+
+#wrapper {
+
+  background: #fff;
+
+  width: 1200px;
+
+  margin: 0 auto;
+
+  border: solid 0px #e7e7e7;
+
+  border-top: 5px solid #0088cc;
+
+  border-radius: 6px;
+
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2), inset 0 4px 0 #ededed;
+
+}
+
+#header {
+
+  padding: 30px 20px;
+
+  border-bottom: solid 1px #e0e0e0;
+
+  margin-bottom: 20px;
+
+  text-align: center;
+
+  font-family: "Nunito Sans", sans-serif;
+
+}
+
+#logo {
+
+  display: inline-block;
+
+  font-weight: 300;
+
+  margin: 0 0 0px;
+
+  font-size: 30px;
+
+  line-height: 24px;
+
+  color: #000;
+
+  text-decoration: none;
+
+  position: relative;
+
+}
+
+
+
+section {
+
+  padding: 0 20px 20px;
+
+}
+
+
+
+h2,
+
+h1 {
+
+  font-family: "Nunito Sans", sans-serif;
+
+  margin: 0 0 10px 0;
+
+  padding: 0;
+
+}
+
+h1 {
+
+  font-size: 30px;
+
+  line-height: 40px;
+
+}
+
+.classname {
+
+  display: block;
+
+  padding: 20px;
+
+  border: solid 2px #ccc;
+
+  text-align: center;
+
+}
+
+
+
+hr {
+
+  padding: 0;
+
+  margin: 50px 0;
+
+  height: 1px;
+
+  border: 0;
+
+  /*background: rgba(0, 0, 0, 0.2);*/
+
+  /*box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);*/
+
+}
+
+
+
+hr {
+
+  border: 0.5px solid #b8996c;
+
+  height: 0;
+
+}
+
+
+
+.section-2 {
+
+  background-image: url("../../img/bgsec2.jpg");
+
+  background-position: center center;
+
+  background-repeat: no-repeat;
+
+  background-size: 100% 100%;
+
+  background-color: #f1e8d9;
+
+  min-height: calc(100vh + 190px);
+
+}
+
+
+
+.section-3 {
+
+  background-image: url("../../img/bgsec3.jpg");
+
+  background-position: center center;
+
+  background-repeat: no-repeat;
+
+  background-size: cover;
+
+  min-height: 100vh;
+
+}
+
+
+
+.foods {
+
+    display: flex;
+
+    align-items: start;
+
+    margin: 0 auto;
+
+    padding: 5%;
+
+    justify-content: center;
+
+    /* max-width: 1400px; */
+
+}
+
+
+
+
+
+
+
+.food-item {
+
+  margin: 0 10px;
+
+  width: 22%;
+
+}
+
+
+
+.food-item:nth-child(2) {
+
+   position: relative;
+
+   top: 130px;
+
+}
+
+
+
+.food-item:nth-child(3) {
+
+    position: relative;
+
+    top: -30px;
+
+}
+
+
+
+.food-item:last-child {
+
+    position: relative;
+
+    top: 70px;
+
+}
+
+
+
+
+
+
+
+.section-3 .foods {
+
+    justify-content: start;
+
+}
+
+
+
+.section-3 .foods .food-item {
+
+    position: relative;
+
+    top: 0;
+
+}
+
+
+
+.food-item img {
+
+  box-shadow: 20px 20px 21px 8px #00000026;
+
+  width: 100%;
+
+}
+
+
+
+.food-item p {
+
+    margin-bottom: 5px;
+
+}
+
+
+
+h2 {
+
+    font-family: 'Playfair Display SC', serif;
+
+  color: #191a1d;
+
+  font-size: 29px;
+
+  text-align: center;
+
+  margin: 10px 0 0px;
+
+  text-transform: uppercase;
+
+}
+
+.foods p {
+
+  text-align: left;
+
+}
+
+
+
+.section-3 h2 {
+
+  text-align: left;
+
+  font-weight: bold;
+
+}
+
+
+
+.section-3 .food-item {
+
+  margin: 0 30px;
+
+  max-width: 480px;
+
+  width: 100%;
+
+  background: white;
+
+  padding: 4em;
+
+}
+
+
+
+.section-3 .food-item img {
+
+    box-shadow: none;
+
+    width: 200px;
+
+    float: right;
+
+    margin-right: -3em;
+
+    margin-bottom: -3em;
+
+    position: absolute;
+
+    right: 50px;
+
+    bottom: -10px;
+
+}
+
+
+
+.section-3 .food-item hr {
+
+    border: none;
+
+    margin-top: 5px;
+
+    margin-bottom: 20px;
+
+    height: 1px;
+
+    background: #b8996c;
+
+}
+
+
+
+.txt p {
+
+    display: flex;
+
+    align-items: end;
+
+    justify-content: left;
+
+    text-align: left;
+
+    padding-right: 2em;
+
+}
+
+
+
+.txt span {
+
+    margin-right: 5px;
+
+}
+
+
+
+footer {
+
+  max-width: 1024px;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  align-items: center;
+
+  text-align: center;
+
+  justify-content: center;
+
+  padding: 2em 1em;
+
+}
+
+
+
+#footer {
+
+  display: flex;
+
+  align-items: center;
+
+  background-color: #d7c094;
+
+  justify-content: space-between;
+
+  padding: 1em 1em;
+
+  color: #7d6e5c;
+
+  font-size: 12px;
+
+}
+
+
+
+.footer-logo img {
+
+  width: 70px;
+
+}
+
+
+
+#footer a {
+
+  color: #7d6e5c;
+
+  text-decoration: none;
+
+}
+
+
+
+#footer a:hover {
+
+  opacity: 0.8;
+
+}
+
+
+
+.soc div {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+}
+
+
+
+.soc div a {
+
+  margin: 0 5px;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: initial;
+    opacity: 0.65;
+}
+footer a:hover {
+    opacity: 1;
+}
+
+.brochure {
+    min-height: calc(100vh + 40px);
+    padding-bottom: 0em;
+}
+
+.brochure .food-item a {
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    display: block;
+}
+.brochure .food-item a:hover {
+    opacity: 0.65;
+}
+
+.brochure .foods {
+    min-height: 100vh;
+}
+
+.brochure .food-item p {
+    text-align: center;
+    font-size: 18px;
+}
+.brochure-content-wrap {
+    position: relative;
+}
+.brochure-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f1eada;
+    background-repeat: no-repeat;
+    background-image: url("../../img/brochure-bg.png");
+    background-position: center center;
+    background-size: 100% auto;
+    box-shadow: 20px 20px 21px 8px #00000026;
+    color: #544f47;
+    height: auto;
+    overflow: hidden;
+    min-height: 100%;
+}
+.brochure-content div.cena {
+    font-family: 'Playfair Display SC', serif; 
+    font-size: 20px;
+    font-weight: bold;
+}
+.brochure-content div.cena span {
+    font-family: "Nunito Sans", sans-serif;
+}
+.brochure-content div:first-child {
+    flex: 1 1 auto;
+    /* overflow: auto; */
+}
+.brochure-content div:last-child {
+    margin-left: -1em;
+    padding: 1em;
+    background: #e6d8bc;
+    margin-bottom: -1em;
+    width: calc(100% + 2em);
+    text-align: center;
+}
+.brochure-content-wrap:hover img{
+    opacity: 0;
+}
+.brochure-content-wrap:hover .brochure-content {
+    display: flex;
+    flex-direction: column;
+    z-index: 9;
+    padding: 1em;
+}
+.brochure-content ul {
+    padding-left: 20px;
+    
+}
+.brochure-content ul li {
+    color: #544f47;
+}
+#footer a {
+
+  color: #7d6e5c;
+
+  text-decoration: none;
+
+}
+
+
+
+#footer a:hover {
+
+  opacity: 0.8;
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .brochure {
+        height: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .brochure .foods {
+        flex-direction: column;
+        align-items: center;
+    }
+    .brochure .food-item {
+        width: 50%;
+        position: static;
+        margin-bottom: 3em;
+    }
+    .foods .food-item:nth-child(2) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .brochure .foods .food-item:last-child {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .section-3 {
+        padding-top: 50px;
+    }
+    .jislider__left-arrow,
+    .jislider__right-arrow {
+        display: block!important;
+    }
+    .section-2 {
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .brochure .food-item {
+        width: 90%;
+    }
+}

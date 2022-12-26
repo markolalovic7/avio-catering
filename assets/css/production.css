@@ -1,0 +1,488 @@
+.clearfix:after {
+  content: ".";
+
+  display: block;
+
+  font-size: 0;
+
+  line-height: 0;
+
+  height: 0;
+
+  clear: both;
+
+  visibility: hidden;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+.clearfix {
+  display: block;
+}
+
+body {
+  margin: 0;
+
+  background: #fff;
+
+  -webkit-text-size-adjust: 100%;
+
+  -moz-text-size-adjust: 100%;
+
+  padding: 10px 2%;
+
+  font-family: "Nunito Sans", sans-serif;
+
+  color: #000;
+}
+
+#wrapper {
+  background: #fff;
+
+  width: 1200px;
+
+  margin: 0 auto;
+
+  border: solid 0px #e7e7e7;
+
+  border-top: 5px solid #0088cc;
+
+  border-radius: 6px;
+
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2), inset 0 4px 0 #ededed;
+}
+
+#header {
+  padding: 30px 20px;
+
+  border-bottom: solid 1px #e0e0e0;
+
+  margin-bottom: 20px;
+
+  text-align: center;
+
+  font-family: "Nunito Sans", sans-serif;
+}
+
+#logo {
+  display: inline-block;
+
+  font-weight: 300;
+
+  margin: 0 0 0px;
+
+  font-size: 30px;
+
+  line-height: 24px;
+
+  color: #000;
+
+  text-decoration: none;
+
+  position: relative;
+}
+
+.our-prod a {
+  background: #f2d279;
+  color: black;
+  font-weight: 400;
+  padding: 8px 20px;
+  border-radius: 3px;
+}
+
+section {
+  padding: 0 20px 20px;
+}
+
+h2,
+h1 {
+  font-family: "Nunito Sans", sans-serif;
+
+  margin: 0 0 10px 0;
+
+  padding: 0;
+}
+
+h1 {
+  font-size: 30px;
+
+  line-height: 40px;
+}
+
+.classname {
+  display: block;
+
+  padding: 20px;
+
+  border: solid 2px #ccc;
+
+  text-align: center;
+}
+
+hr {
+  padding: 0;
+
+  margin: 50px 0;
+
+  height: 1px;
+
+  border: 0;
+
+  /*background: rgba(0, 0, 0, 0.2);*/
+
+  /*box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);*/
+}
+
+hr {
+  border: 0.5px solid #b8996c;
+
+  height: 0;
+}
+
+.section-2 {
+  background-image: url("../../img/bgsec2.jpg");
+
+  background-position: center top;
+
+  background-repeat: no-repeat;
+
+  background-size: cover;
+}
+
+.section-3 {
+  background-image: url("../../img/schools/1.jpg");
+
+  background-position: center center;
+
+  background-repeat: no-repeat;
+
+  background-size: cover;
+
+  width: 100%;
+
+  height: 100vh;
+}
+
+.sec-4 {
+  background: none;
+
+  display: flex;
+}
+
+.sec-4 .foods {
+  width: 40%;
+}
+
+.section-3 .big-img {
+  background-image: url("../../img/bgsec3212.jpg");
+
+  background-position: right center;
+
+  background-repeat: no-repeat;
+
+  background-size: cover;
+
+  width: 60%;
+}
+
+.sec-4 .food-item img {
+  position: static !important;
+
+  margin-top: 3em;
+}
+
+.sec-4 .food-item {
+  margin: 0 !important;
+
+  padding-bottom: 2em !important;
+
+  width: 100%;
+
+  max-width: unset !important;
+}
+
+.foods {
+  display: flex;
+
+  align-items: center;
+
+  margin: 0 auto;
+
+  padding: 5% 0;
+
+  justify-content: flex-start;
+
+  margin-left: 20%;
+
+  height: calc(100vh - 0px);
+}
+
+.food-item {
+  margin: 0 30px;
+}
+
+.food-item img {
+  box-shadow: 20px 20px 21px 8px #00000026;
+
+  width: 100%;
+}
+
+.about-page h2 {
+  font-family: "Playfair Display SC", serif;
+
+  color: #191a1d;
+
+  font-size: 36px;
+
+  text-align: center;
+
+  margin: 10px 0;
+
+  text-transform: uppercase;
+}
+
+.foods p {
+  text-align: center;
+}
+
+.section-3 h2 {
+  text-align: center;
+
+  font-weight: bold;
+}
+
+.section-3 .food-item {
+  margin: 0 5em;
+
+  /*margin-left: -10em;*/
+
+  max-width: 560px;
+
+  background: transparent;
+
+  padding: 2em;
+
+  /* height: calc(100vh - 220px); */
+
+  position: relative;
+
+  padding-bottom: 4em;
+}
+
+.food-item hr {
+  border: none;
+
+  margin-top: 5px;
+
+  margin-bottom: 20px;
+
+  height: 1px;
+
+  background: #b8996c;
+}
+
+.food-item b {
+  color: #000000;
+  font-size: 20px;
+}
+
+.food-item p {
+  color: #574f47;
+}
+
+.txt p {
+  display: flex;
+  align-items: end;
+  justify-content: left;
+  text-align: center;
+  padding-right: 0;
+  text-align: justify;
+}
+.our-prod {
+  text-align: center;
+}
+.our-prod a {
+  color: initial;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.txt span {
+  margin-right: 5px;
+}
+
+.section-3 .food-item img {
+  box-shadow: none;
+
+  width: 160px;
+
+  position: absolute;
+
+  right: -5em;
+
+  bottom: -5em;
+}
+
+footer {
+  max-width: 1024px;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  align-items: center;
+
+  text-align: center;
+
+  justify-content: center;
+
+  padding: 2em 1em;
+}
+
+#footer {
+  display: flex;
+
+  align-items: center;
+
+  background-color: #d7c094;
+
+  justify-content: space-between;
+
+  padding: 1em 1em;
+
+  color: #7d6e5c;
+
+  font-size: 12px;
+}
+
+.footer-logo img {
+  width: 70px;
+}
+
+#footer a {
+  color: #7d6e5c;
+
+  text-decoration: none;
+}
+
+#footer a:hover {
+  opacity: 0.8;
+}
+
+.soc div {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.soc div a {
+  margin: 0 5px;
+}
+
+.section-4 {
+  padding: 0;
+}
+
+/* .w-70 {
+  width: 70%;
+}
+
+.section-4 .w-70 {
+  margin-left: 30%;
+} */
+
+.absolute.right-txt {
+  right: unset;
+
+  left: 0;
+  z-index: 8;
+}
+
+.absolute.right-txt {
+  background-color: #ffffffbd;
+  height: auto;
+  bottom: 0;
+  left: 50px;
+  top: unset;
+}
+
+.absolute.right-txt {
+  width: 30%;
+}
+.absolute.right-txt h2 {
+  text-align: left;
+}
+.page-number {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+}
+.page-number span {
+  font-family: "Dancing Script", cursive;
+}
+.page-number hr {
+  margin: 10px 0;
+  height: 1px;
+  border: none;
+}
+
+.page-number em,
+.page-number span {
+  text-align: right;
+}
+.page-number em {
+  text-align: right;
+  font-weight: bold;
+  color: white;
+  font-style: normal;
+  font-size: 15px;
+}
+.page-number span {
+  font-size: 30px;
+  margin-right: 25%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .section-3 {
+    padding-top: 85px;
+    height: auto;
+  }
+  .foods {
+    background: #ffffffbd;
+    margin: 3em;
+    height: auto;
+  }
+  .foods .food-item {
+    padding: 0;
+    margin: 2em;
+  }
+  .absolute.right-txt {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+  .w-70 {
+    margin: 0 !important;
+    width: 100%;
+  }
+  .small-img {
+    display: none;
+  }
+  .jislider__right-arrow,
+  .jislider__left-arrow {
+    display: block;
+  }
+  .section-3 h2 {
+    font-size: 20px;
+  }
+}
